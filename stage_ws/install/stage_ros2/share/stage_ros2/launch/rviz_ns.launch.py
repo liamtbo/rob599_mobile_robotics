@@ -1,0 +1,1 @@
+/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src/stage_ros2/launch/rviz_ns.launch.py

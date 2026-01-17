@@ -1,0 +1,610 @@
+[0.000000] (-) TimerEvent: {}
+[0.000138] (stage) JobQueued: {'identifier': 'stage', 'dependencies': OrderedDict()}
+[0.000185] (stage_ros2) JobQueued: {'identifier': 'stage_ros2', 'dependencies': OrderedDict({'stage': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage'})}
+[0.000252] (stage) JobStarted: {'identifier': 'stage'}
+[0.006985] (stage) JobProgress: {'identifier': 'stage', 'progress': 'cmake'}
+[0.007786] (stage) Command: {'cmd': ['/usr/bin/cmake', '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src/Stage', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage'], 'cwd': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'liam-bouffard', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/liam-bouffard', 'CHROME_DESKTOP': 'code.desktop', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src', 'TERM_PROGRAM_VERSION': '1.106.3', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2588', 'SYSTEMD_EXEC_PID': '2966', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '41521', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'liam-bouffard', 'JOURNAL_STREAM': '9:31705', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'liam-bouffard', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'WINDOWPATH': '2', 'PATH': '/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/home/liam-bouffard/anaconda3/condabin:/home/liam-bouffard/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/liam-bouffard/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/vncserver', 'SESSION_MANAGER': 'local/liam-bouffard-Legion-7-16IRX9:@/tmp/.ICE-unix/2922,unix/liam-bouffard-Legion-7-16IRX9:/tmp/.ICE-unix/2922', 'INVOCATION_ID': '120c380b1b9547c59db8de0835d40501', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-e3a67ccfad.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/kilted', 'CONDA_PYTHON_EXE': '/home/liam-bouffard/anaconda3/bin/python', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/liam-bouffard/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor'}), 'shell': False}
+[0.099671] (-) TimerEvent: {}
+[0.127272] (stage) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.199898] (-) TimerEvent: {}
+[0.214456] (stage) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.232654] (stage) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300021] (-) TimerEvent: {}
+[0.333410] (stage) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.340437] (stage) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.340737] (stage) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.341306] (stage) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.351222] (stage) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400138] (-) TimerEvent: {}
+[0.461029] (stage) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.467692] (stage) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.467901] (stage) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.468140] (stage) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.468526] (stage) StdoutLine: {'line': b'-- Stage version 4.3.0\n'}
+[0.468669] (stage) StdoutLine: {'line': b'-- Operating system is Linux\n'}
+[0.468710] (stage) StdoutLine: {'line': b'-- Installing Libraries to /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib\n'}
+[0.468758] (stage) StdoutLine: {'line': b'-- Installing Plugins to /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3\n'}
+[0.468803] (stage) StdoutLine: {'line': b'-- Build type RELEASE\n'}
+[0.468849] (stage) StdoutLine: {'line': b'-- Checking for libtool\n'}
+[0.474246] (stage) StdoutLine: {'line': b'-- Checking for required libraries...\n'}
+[0.490761] (stage) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[0.500217] (-) TimerEvent: {}
+[0.501826] (stage) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3")  \n'}
+[0.518054] (stage) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.43") \n'}
+[0.524300] (stage) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[0.600426] (-) TimerEvent: {}
+[0.649241] (stage) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[0.650687] (stage) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[0.700621] (-) TimerEvent: {}
+[0.742599] (stage) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[0.742722] (stage) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[0.800736] (-) TimerEvent: {}
+[0.845099] (stage) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[0.845320] (stage) StdoutLine: {'line': b'-- Looking for connect\n'}
+[0.900844] (-) TimerEvent: {}
+[0.927504] (stage) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[0.927718] (stage) StdoutLine: {'line': b'-- Looking for remove\n'}
+[1.000976] (-) TimerEvent: {}
+[1.022431] (stage) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[1.022657] (stage) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[1.101104] (-) TimerEvent: {}
+[1.122284] (stage) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[1.122418] (stage) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[1.201210] (-) TimerEvent: {}
+[1.201413] (stage) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[1.256307] (stage) StdoutLine: {'line': b'-- Found FLTK: fltk_images;fltk_forms;fltk_gl;fltk  \n'}
+[1.259477] (stage) StdoutLine: {'line': b'-- Checking for optional libraries...\n'}
+[1.260191] (stage) StdoutLine: {'line': b'-- Installation path CMAKE_INSTALL_PREFIX=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage\n'}
+[1.261047] (stage) StdoutLine: {'line': b'-- Configuring libstage\n'}
+[1.271112] (stage) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") \n'}
+[1.271872] (stage) StdoutLine: {'line': b"-- Checking for one of the modules 'playercore>=2.1.0'\n"}
+[1.301401] (-) TimerEvent: {}
+[1.320933] (stage) StdoutLine: {'line': b'--   * Player not detected. If Player is installed but not detected, check your PKG_CONFIG_PATH.\n'}
+[1.338621] (stage) StdoutLine: {'line': b'-- Configuring done (1.3s)\n'}
+[1.367504] (stage) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.368603] (stage) StderrLine: {'line': b'\x1b[33mCMake Warning:\n'}
+[1.368670] (stage) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[1.368714] (stage) StderrLine: {'line': b'\n'}
+[1.368751] (stage) StderrLine: {'line': b'    CATKIN_INSTALL_INTO_PREFIX_ROOT\n'}
+[1.368789] (stage) StderrLine: {'line': b'    CATKIN_SYMLINK_INSTALL\n'}
+[1.368826] (stage) StderrLine: {'line': b'\n'}
+[1.368863] (stage) StderrLine: {'line': b'\x1b[0m\n'}
+[1.372735] (stage) StdoutLine: {'line': b'-- Build files have been written to: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage\n'}
+[1.379244] (stage) CommandEnded: {'returncode': 0}
+[1.380067] (stage) JobProgress: {'identifier': 'stage', 'progress': 'build'}
+[1.380084] (stage) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage', '--', '-j32', '-l32'], 'cwd': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'liam-bouffard', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/liam-bouffard', 'CHROME_DESKTOP': 'code.desktop', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src', 'TERM_PROGRAM_VERSION': '1.106.3', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2588', 'SYSTEMD_EXEC_PID': '2966', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '41521', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'liam-bouffard', 'JOURNAL_STREAM': '9:31705', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'liam-bouffard', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'WINDOWPATH': '2', 'PATH': '/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/home/liam-bouffard/anaconda3/condabin:/home/liam-bouffard/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/liam-bouffard/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/vncserver', 'SESSION_MANAGER': 'local/liam-bouffard-Legion-7-16IRX9:@/tmp/.ICE-unix/2922,unix/liam-bouffard-Legion-7-16IRX9:/tmp/.ICE-unix/2922', 'INVOCATION_ID': '120c380b1b9547c59db8de0835d40501', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-e3a67ccfad.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/kilted', 'CONDA_PYTHON_EXE': '/home/liam-bouffard/anaconda3/bin/python', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/liam-bouffard/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor'}), 'shell': False}
+[1.401587] (-) TimerEvent: {}
+[1.423655] (stage) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/blockgroup.cc.o\x1b[0m\n'}
+[1.427628] (stage) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/gl.cc.o\x1b[0m\n'}
+[1.427805] (stage) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_blinkenlight.cc.o\x1b[0m\n'}
+[1.427880] (stage) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/color.cc.o\x1b[0m\n'}
+[1.427945] (stage) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/block.cc.o\x1b[0m\n'}
+[1.428012] (stage) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/camera.cc.o\x1b[0m\n'}
+[1.428075] (stage) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/file_manager.cc.o\x1b[0m\n'}
+[1.428137] (stage) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_bumper.cc.o\x1b[0m\n'}
+[1.428257] (stage) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/logentry.cc.o\x1b[0m\n'}
+[1.428424] (stage) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model.cc.o\x1b[0m\n'}
+[1.428544] (stage) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_lightindicator.cc.o\x1b[0m\n'}
+[1.428711] (stage) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_callbacks.cc.o\x1b[0m\n'}
+[1.428847] (stage) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_actuator.cc.o\x1b[0m\n'}
+[1.429090] (stage) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_camera.cc.o\x1b[0m\n'}
+[1.429251] (stage) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_position.cc.o\x1b[0m\n'}
+[1.429334] (stage) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_draw.cc.o\x1b[0m\n'}
+[1.429438] (stage) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_blobfinder.cc.o\x1b[0m\n'}
+[1.429525] (stage) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_fiducial.cc.o\x1b[0m\n'}
+[1.429596] (stage) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_gripper.cc.o\x1b[0m\n'}
+[1.429661] (stage) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/powerpack.cc.o\x1b[0m\n'}
+[1.429733] (stage) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/stage.cc.o\x1b[0m\n'}
+[1.430523] (stage) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/region.cc.o\x1b[0m\n'}
+[1.430667] (stage) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/option.cc.o\x1b[0m\n'}
+[1.430712] (stage) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/world.cc.o\x1b[0m\n'}
+[1.430764] (stage) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/typetable.cc.o\x1b[0m\n'}
+[1.430819] (stage) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/options_dlg.cc.o\x1b[0m\n'}
+[1.430963] (stage) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/texture_manager.cc.o\x1b[0m\n'}
+[1.431152] (stage) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/canvas.cc.o\x1b[0m\n'}
+[1.431435] (stage) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/worldgui.cc.o\x1b[0m\n'}
+[1.431614] (stage) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/model_ranger.cc.o\x1b[0m\n'}
+[1.434601] (stage) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/vis_strip.cc.o\x1b[0m\n'}
+[1.434798] (stage) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/worldfile.cc.o\x1b[0m\n'}
+[1.502549] (-) TimerEvent: {}
+[1.602891] (-) TimerEvent: {}
+[1.703172] (-) TimerEvent: {}
+[1.815811] (-) TimerEvent: {}
+[1.916560] (-) TimerEvent: {}
+[2.016870] (-) TimerEvent: {}
+[2.118687] (-) TimerEvent: {}
+[2.219160] (-) TimerEvent: {}
+[2.319565] (-) TimerEvent: {}
+[2.360693] (stage) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stage.dir/ancestor.cc.o\x1b[0m\n'}
+[2.419661] (-) TimerEvent: {}
+[2.520748] (-) TimerEvent: {}
+[2.621040] (-) TimerEvent: {}
+[2.721339] (-) TimerEvent: {}
+[2.821613] (-) TimerEvent: {}
+[2.921936] (-) TimerEvent: {}
+[3.022215] (-) TimerEvent: {}
+[3.122586] (-) TimerEvent: {}
+[3.222848] (-) TimerEvent: {}
+[3.323134] (-) TimerEvent: {}
+[3.330124] (stage) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libstage.so\x1b[0m\n'}
+[3.422156] (stage) StdoutLine: {'line': b'[ 57%] Built target stage\n'}
+[3.423228] (-) TimerEvent: {}
+[3.439723] (stage) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/fasr.dir/fasr.cc.o\x1b[0m\n'}
+[3.441852] (stage) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/fasr2.dir/astar/findpath.cpp.o\x1b[0m\n'}
+[3.442000] (stage) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/fasr2.dir/fasr2.cc.o\x1b[0m\n'}
+[3.443332] (stage) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object libstage/CMakeFiles/stagebinary.dir/main.cc.o\x1b[0m\n'}
+[3.443671] (stage) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object worlds/benchmark/CMakeFiles/expand_swarm.dir/expand_swarm.cc.o\x1b[0m\n'}
+[3.445393] (stage) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/sink.dir/sink.cc.o\x1b[0m\n'}
+[3.446330] (stage) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object worlds/benchmark/CMakeFiles/expand_pioneer.dir/expand_pioneer.cc.o\x1b[0m\n'}
+[3.447539] (stage) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/source.dir/source.cc.o\x1b[0m\n'}
+[3.449230] (stage) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/lasernoise.dir/lasernoise.cc.o\x1b[0m\n'}
+[3.449539] (stage) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/wander.dir/wander.cc.o\x1b[0m\n'}
+[3.449633] (stage) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/pioneer_flocking.dir/pioneer_flocking.cc.o\x1b[0m\n'}
+[3.450173] (stage) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/rasterize.dir/rasterize.cc.o\x1b[0m\n'}
+[3.450313] (stage) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object examples/ctrl/CMakeFiles/dynamic.dir/dynamic.cc.o\x1b[0m\n'}
+[3.523374] (-) TimerEvent: {}
+[3.623687] (-) TimerEvent: {}
+[3.723982] (-) TimerEvent: {}
+[3.824282] (-) TimerEvent: {}
+[3.924631] (-) TimerEvent: {}
+[3.925194] (stage) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared module sink.so\x1b[0m\n'}
+[3.940125] (stage) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared module expand_pioneer.so\x1b[0m\n'}
+[3.944318] (stage) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX shared module pioneer_flocking.so\x1b[0m\n'}
+[3.977574] (stage) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking CXX shared module fasr.so\x1b[0m\n'}
+[3.989869] (stage) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX shared module source.so\x1b[0m\n'}
+[3.999595] (stage) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking CXX shared module expand_swarm.so\x1b[0m\n'}
+[4.005180] (stage) StdoutLine: {'line': b'[ 89%] Built target sink\n'}
+[4.005393] (stage) StdoutLine: {'line': b'[ 89%] Built target expand_pioneer\n'}
+[4.007523] (stage) StdoutLine: {'line': b'[ 89%] Built target pioneer_flocking\n'}
+[4.011926] (stage) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX shared module lasernoise.so\x1b[0m\n'}
+[4.024735] (-) TimerEvent: {}
+[4.034308] (stage) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX shared module dynamic.so\x1b[0m\n'}
+[4.040758] (stage) StdoutLine: {'line': b'[ 93%] Built target fasr\n'}
+[4.050183] (stage) StdoutLine: {'line': b'[ 93%] Built target source\n'}
+[4.065410] (stage) StdoutLine: {'line': b'[ 93%] Built target expand_swarm\n'}
+[4.073570] (stage) StdoutLine: {'line': b'[ 93%] Built target lasernoise\n'}
+[4.095435] (stage) StdoutLine: {'line': b'[ 93%] Built target dynamic\n'}
+[4.124822] (-) TimerEvent: {}
+[4.153778] (stage) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX executable stage\x1b[0m\n'}
+[4.177802] (stage) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX shared module rasterize.so\x1b[0m\n'}
+[4.194080] (stage) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking CXX shared module wander.so\x1b[0m\n'}
+[4.224717] (stage) StdoutLine: {'line': b'[ 98%] Built target stagebinary\n'}
+[4.224929] (-) TimerEvent: {}
+[4.238268] (stage) StdoutLine: {'line': b'[ 98%] Built target rasterize\n'}
+[4.253867] (stage) StdoutLine: {'line': b'[ 98%] Built target wander\n'}
+[4.299928] (stage) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared module fasr2.so\x1b[0m\n'}
+[4.325162] (-) TimerEvent: {}
+[4.378450] (stage) StdoutLine: {'line': b'[100%] Built target fasr2\n'}
+[4.393634] (stage) CommandEnded: {'returncode': 0}
+[4.394678] (stage) JobProgress: {'identifier': 'stage', 'progress': 'install'}
+[4.405453] (stage) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage'], 'cwd': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'liam-bouffard', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/liam-bouffard', 'CHROME_DESKTOP': 'code.desktop', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src', 'TERM_PROGRAM_VERSION': '1.106.3', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2588', 'SYSTEMD_EXEC_PID': '2966', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '41521', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'liam-bouffard', 'JOURNAL_STREAM': '9:31705', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'liam-bouffard', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'WINDOWPATH': '2', 'PATH': '/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/home/liam-bouffard/anaconda3/condabin:/home/liam-bouffard/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/liam-bouffard/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/vncserver', 'SESSION_MANAGER': 'local/liam-bouffard-Legion-7-16IRX9:@/tmp/.ICE-unix/2922,unix/liam-bouffard-Legion-7-16IRX9:/tmp/.ICE-unix/2922', 'INVOCATION_ID': '120c380b1b9547c59db8de0835d40501', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-e3a67ccfad.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/kilted', 'CONDA_PYTHON_EXE': '/home/liam-bouffard/anaconda3/bin/python', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/liam-bouffard/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor'}), 'shell': False}
+[4.414358] (stage) StdoutLine: {'line': b'-- Install configuration: "RELEASE"\n'}
+[4.414528] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/pkgconfig/stage.pc\n'}
+[4.414785] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/cmake/Stage/stage-config.cmake\n'}
+[4.414907] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/cmake/Stage/stage-config-version.cmake\n'}
+[4.415100] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/bin/stage\n'}
+[4.415310] (stage) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/bin/stage" to ""\n'}
+[4.415430] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/libstage.so.4.3.0\n'}
+[4.416180] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/libstage.so\n'}
+[4.416302] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/include/Stage-4.3/stage.hh\n'}
+[4.416841] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/fasr.so\n'}
+[4.416989] (stage) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/fasr.so" to ""\n'}
+[4.417073] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/sink.so\n'}
+[4.417166] (stage) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/sink.so" to ""\n'}
+[4.417247] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/source.so\n'}
+[4.417338] (stage) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/source.so" to ""\n'}
+[4.417418] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/wander.so\n'}
+[4.417518] (stage) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/wander.so" to ""\n'}
+[4.417604] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/pioneer_flocking.so\n'}
+[4.417697] (stage) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/pioneer_flocking.so" to ""\n'}
+[4.417793] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/rasterize.so\n'}
+[4.417883] (stage) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/rasterize.so" to ""\n'}
+[4.417974] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/lasernoise.so\n'}
+[4.418072] (stage) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/lasernoise.so" to ""\n'}
+[4.418154] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/dynamic.so\n'}
+[4.418242] (stage) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/dynamic.so" to ""\n'}
+[4.418319] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/fasr2.so\n'}
+[4.418398] (stage) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/fasr2.so" to ""\n'}
+[4.418505] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/blue.png\n'}
+[4.418606] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/death.png\n'}
+[4.418695] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/green.png\n'}
+[4.418792] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/logo.png\n'}
+[4.418884] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/mains.png\n'}
+[4.418976] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/mainspower.png\n'}
+[4.419065] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/question_mark.png\n'}
+[4.419140] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/red.png\n'}
+[4.419227] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/stagelogo.png\n'}
+[4.419332] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/stall-old.png\n'}
+[4.419437] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/stall.png\n'}
+[4.419542] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/rgb.txt\n'}
+[4.419646] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/rgb.txt\n'}
+[4.419750] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/amcl-sonar.cfg\n'}
+[4.419848] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/autolab.cfg\n'}
+[4.419945] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/camera.cfg\n'}
+[4.420042] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/everything.cfg\n'}
+[4.420147] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/lsp_test.cfg\n'}
+[4.420251] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/mbicp.cfg\n'}
+[4.420349] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/nd.cfg\n'}
+[4.420453] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/roomba.cfg\n'}
+[4.420557] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/simple.cfg\n'}
+[4.420663] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/test.cfg\n'}
+[4.420766] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/uoa_robotics_lab.cfg\n'}
+[4.420865] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/vfh.cfg\n'}
+[4.420970] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wavefront-remote.cfg\n'}
+[4.421068] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wavefront.cfg\n'}
+[4.421166] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi.cfg\n'}
+[4.421242] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/SFU.world\n'}
+[4.421327] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/autolab.world\n'}
+[4.421404] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/camera.world\n'}
+[4.421511] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/circuit.world\n'}
+[4.421590] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/everything.world\n'}
+[4.421677] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/fasr.world\n'}
+[4.421760] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/fasr2.world\n'}
+[4.421843] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/fasr_plan.world\n'}
+[4.421927] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/large.world\n'}
+[4.422031] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/lsp_test.world\n'}
+[4.422129] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/mbicp.world\n'}
+[4.422225] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/pioneer_flocking.world\n'}
+[4.422322] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/pioneer_follow.world\n'}
+[4.422427] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/pioneer_walle.world\n'}
+[4.422522] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/roomba.world\n'}
+[4.422629] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/sensor_noise_demo.world\n'}
+[4.422716] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/sensor_noise_module_demo.world\n'}
+[4.422791] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/simple.world\n'}
+[4.422900] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/uoa_robotics_lab.world\n'}
+[4.422996] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi.world\n'}
+[4.423092] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/beacons.inc\n'}
+[4.423181] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/chatterbox.inc\n'}
+[4.423255] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/hokuyo.inc\n'}
+[4.423328] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/irobot.inc\n'}
+[4.423406] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/map.inc\n'}
+[4.423481] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/objects.inc\n'}
+[4.423560] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/pantilt.inc\n'}
+[4.423634] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/pioneer.inc\n'}
+[4.423707] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/sick.inc\n'}
+[4.423780] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/ubot.inc\n'}
+[4.423883] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/uoa_robotics_lab_models.inc\n'}
+[4.424034] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/walle.inc\n'}
+[4.424195] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/cfggen.sh\n'}
+[4.424272] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/test.sh\n'}
+[4.424359] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/worldgen.sh\n'}
+[4.424400] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/expand_swarm.so\n'}
+[4.424439] (stage) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/expand_swarm.so" to ""\n'}
+[4.424479] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/expand_pioneer.so\n'}
+[4.424592] (stage) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/expand_pioneer.so" to ""\n'}
+[4.424634] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/889_05.png\n'}
+[4.424672] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/SFU_1200x615.png\n'}
+[4.424708] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/SRI-AIC-kwing.png\n'}
+[4.424745] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/autolab.png\n'}
+[4.424782] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/cave.png\n'}
+[4.424819] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/cave_compact.png\n'}
+[4.424856] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/cave_filled.png\n'}
+[4.424893] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/frieburg.png\n'}
+[4.424930] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/ghost.png\n'}
+[4.424968] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/hospital.png\n'}
+[4.425004] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/hospital_section.png\n'}
+[4.425164] (-) TimerEvent: {}
+[4.425234] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/human_outline.png\n'}
+[4.425282] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/mbicp.png\n'}
+[4.425339] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/rink.png\n'}
+[4.425378] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/sal2.png\n'}
+[4.425428] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/simple_rooms.png\n'}
+[4.425468] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/space_invader.png\n'}
+[4.425508] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/submarine.png\n'}
+[4.425549] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/submarine_small.png\n'}
+[4.425588] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/table.png\n'}
+[4.425627] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/uoa_robotics_lab.png\n'}
+[4.425663] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi/commando.world\n'}
+[4.425700] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi/hosp_wifi.world\n'}
+[4.425735] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi/hosp_wifi_5.world\n'}
+[4.425772] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi/wifi.world\n'}
+[4.425809] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi/wifi_itu.world\n'}
+[4.425845] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi/wifi_logdistance.world\n'}
+[4.425882] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi/wifi_ray.world\n'}
+[4.425919] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi/wifi_simple.world\n'}
+[4.425955] (stage) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi/map.inc\n'}
+[4.425990] (stage) CommandEnded: {'returncode': 0}
+[4.442591] (stage) JobEnded: {'identifier': 'stage', 'rc': 0}
+[4.443543] (stage_ros2) JobStarted: {'identifier': 'stage_ros2'}
+[4.452963] (stage_ros2) JobProgress: {'identifier': 'stage_ros2', 'progress': 'cmake'}
+[4.453678] (stage_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src/stage_ros2', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2'], 'cwd': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'liam-bouffard', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'ROS_PACKAGE_PATH': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib:/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/liam-bouffard', 'CHROME_DESKTOP': 'code.desktop', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src', 'TERM_PROGRAM_VERSION': '1.106.3', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2588', 'SYSTEMD_EXEC_PID': '2966', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '41521', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'liam-bouffard', 'JOURNAL_STREAM': '9:31705', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'PKG_CONFIG_PATH': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/x86_64-linux-gnu/pkgconfig:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/pkgconfig', 'USERNAME': 'liam-bouffard', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'WINDOWPATH': '2', 'PATH': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/bin:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/home/liam-bouffard/anaconda3/condabin:/home/liam-bouffard/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/liam-bouffard/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/vncserver', 'SESSION_MANAGER': 'local/liam-bouffard-Legion-7-16IRX9:@/tmp/.ICE-unix/2922,unix/liam-bouffard-Legion-7-16IRX9:/tmp/.ICE-unix/2922', 'INVOCATION_ID': '120c380b1b9547c59db8de0835d40501', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-e3a67ccfad.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/kilted', 'CONDA_PYTHON_EXE': '/home/liam-bouffard/anaconda3/bin/python', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/liam-bouffard/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/kilted:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor'}), 'shell': False}
+[4.519992] (stage_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[4.525276] (-) TimerEvent: {}
+[4.562589] (stage_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[4.574730] (stage_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.625501] (-) TimerEvent: {}
+[4.639149] (stage_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.645661] (stage_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[4.645828] (stage_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.646108] (stage_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.653172] (stage_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.725596] (-) TimerEvent: {}
+[4.756909] (stage_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.763927] (stage_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.764095] (stage_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.764436] (stage_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.769391] (stage_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)\n'}
+[4.825665] (-) TimerEvent: {}
+[4.883342] (stage_ros2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[4.925740] (-) TimerEvent: {}
+[4.939263] (stage_ros2) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[4.961879] (stage_ros2) StdoutLine: {'line': b'-- Found rclcpp: 29.5.3 (/opt/ros/kilted/share/rclcpp/cmake)\n'}
+[4.992689] (stage_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)\n'}
+[5.002963] (stage_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)\n'}
+[5.017007] (stage_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.025847] (-) TimerEvent: {}
+[5.030757] (stage_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.088924] (stage_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)\n'}
+[5.091421] (stage_ros2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 9.3.3 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.125961] (-) TimerEvent: {}
+[5.206635] (stage_ros2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[5.224374] (stage_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.226052] (-) TimerEvent: {}
+[5.295004] (stage_ros2) StdoutLine: {'line': b'-- Found rclcpp_components: 29.5.3 (/opt/ros/kilted/share/rclcpp_components/cmake)\n'}
+[5.323570] (stage_ros2) StdoutLine: {'line': b'-- Found sensor_msgs: 5.5.1 (/opt/ros/kilted/share/sensor_msgs/cmake)\n'}
+[5.326161] (-) TimerEvent: {}
+[5.370584] (stage_ros2) StdoutLine: {'line': b'-- Found nav_msgs: 5.5.1 (/opt/ros/kilted/share/nav_msgs/cmake)\n'}
+[5.393019] (stage_ros2) StdoutLine: {'line': b'-- Found tf2_ros: 0.41.2 (/opt/ros/kilted/share/tf2_ros/cmake)\n'}
+[5.426269] (-) TimerEvent: {}
+[5.467539] (stage_ros2) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.41.2 (/opt/ros/kilted/share/tf2_geometry_msgs/cmake)\n'}
+[5.478571] (stage_ros2) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.4.0 (/opt/ros/kilted/share/eigen3_cmake_module/cmake)\n'}
+[5.479711] (stage_ros2) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[5.479798] (stage_ros2) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[5.482149] (stage_ros2) StdoutLine: {'line': b'-- Found std_srvs: 5.5.1 (/opt/ros/kilted/share/std_srvs/cmake)\n'}
+[5.496538] (stage_ros2) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):\n'}
+[5.496652] (stage_ros2) StderrLine: {'line': b'  ament_target_dependencies() is deprecated.  Use target_link_libraries()\n'}
+[5.496698] (stage_ros2) StderrLine: {'line': b'  with modern CMake targets instead.  Try replacing this call with:\n'}
+[5.496736] (stage_ros2) StderrLine: {'line': b'\n'}
+[5.496782] (stage_ros2) StderrLine: {'line': b'    target_link_libraries(stage_node PUBLIC\n'}
+[5.496820] (stage_ros2) StderrLine: {'line': b'      ${geometry_msgs_TARGETS}\n'}
+[5.496856] (stage_ros2) StderrLine: {'line': b'      ${nav_msgs_TARGETS}\n'}
+[5.496891] (stage_ros2) StderrLine: {'line': b'      ${sensor_msgs_TARGETS}\n'}
+[5.496926] (stage_ros2) StderrLine: {'line': b'      ${std_msgs_TARGETS}\n'}
+[5.496960] (stage_ros2) StderrLine: {'line': b'      ${std_srvs_TARGETS}\n'}
+[5.496995] (stage_ros2) StderrLine: {'line': b'      rclcpp::rclcpp\n'}
+[5.497029] (stage_ros2) StderrLine: {'line': b'      rclcpp_components::component\n'}
+[5.497068] (stage_ros2) StderrLine: {'line': b'      rclcpp_components::component_manager\n'}
+[5.497102] (stage_ros2) StderrLine: {'line': b'      sensor_msgs::sensor_msgs_library\n'}
+[5.497136] (stage_ros2) StderrLine: {'line': b'      tf2_geometry_msgs::tf2_geometry_msgs\n'}
+[5.497170] (stage_ros2) StderrLine: {'line': b'      tf2_ros::static_transform_broadcaster_node\n'}
+[5.497207] (stage_ros2) StderrLine: {'line': b'      tf2_ros::tf2_ros\n'}
+[5.497242] (stage_ros2) StderrLine: {'line': b'    )\n'}
+[5.497275] (stage_ros2) StderrLine: {'line': b'\n'}
+[5.497309] (stage_ros2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[5.497344] (stage_ros2) StderrLine: {'line': b'  CMakeLists.txt:34 (ament_target_dependencies)\n'}
+[5.497379] (stage_ros2) StderrLine: {'line': b'\n'}
+[5.497412] (stage_ros2) StderrLine: {'line': b'\x1b[0m\n'}
+[5.499304] (stage_ros2) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):\n'}
+[5.499450] (stage_ros2) StderrLine: {'line': b'  ament_target_dependencies() is deprecated.  Use target_link_libraries()\n'}
+[5.499547] (stage_ros2) StderrLine: {'line': b'  with modern CMake targets instead.  Try replacing this call with:\n'}
+[5.499633] (stage_ros2) StderrLine: {'line': b'\n'}
+[5.499714] (stage_ros2) StderrLine: {'line': b'    target_link_libraries(stage_ros2 PUBLIC\n'}
+[5.499798] (stage_ros2) StderrLine: {'line': b'      rclcpp::rclcpp\n'}
+[5.499877] (stage_ros2) StderrLine: {'line': b'    )\n'}
+[5.499958] (stage_ros2) StderrLine: {'line': b'\n'}
+[5.500034] (stage_ros2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[5.500120] (stage_ros2) StderrLine: {'line': b'  CMakeLists.txt:51 (ament_target_dependencies)\n'}
+[5.500198] (stage_ros2) StderrLine: {'line': b'\n'}
+[5.500277] (stage_ros2) StderrLine: {'line': b'\x1b[0m\n'}
+[5.501083] (stage_ros2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)\n'}
+[5.526468] (-) TimerEvent: {}
+[5.582314] (stage_ros2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.582635] (stage_ros2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src/stage_ros2/./include;$<BUILD_INTERFACE:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src/stage_ros2/include>\n'}
+[5.582759] (stage_ros2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.583420] (stage_ros2) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[5.583547] (stage_ros2) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[5.584414] (stage_ros2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.585006] (stage_ros2) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[5.587616] (stage_ros2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.587747] (stage_ros2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.588367] (stage_ros2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.590979] (stage_ros2) StdoutLine: {'line': b"-- Added test 'clang_format' to check C / C++ code style\n"}
+[5.591637] (stage_ros2) StdoutLine: {'line': b"-- Added test 'pycodestyle' to check Python code against some of the style conventions in PEP 8\n"}
+[5.592823] (stage_ros2) StdoutLine: {'line': b'-- Configuring done (1.1s)\n'}
+[5.609897] (stage_ros2) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[5.614016] (stage_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2\n'}
+[5.621564] (stage_ros2) CommandEnded: {'returncode': 0}
+[5.622166] (stage_ros2) JobProgress: {'identifier': 'stage_ros2', 'progress': 'build'}
+[5.622527] (stage_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2', '--', '-j32', '-l32'], 'cwd': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'liam-bouffard', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'ROS_PACKAGE_PATH': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib:/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/liam-bouffard', 'CHROME_DESKTOP': 'code.desktop', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src', 'TERM_PROGRAM_VERSION': '1.106.3', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2588', 'SYSTEMD_EXEC_PID': '2966', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '41521', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'liam-bouffard', 'JOURNAL_STREAM': '9:31705', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'PKG_CONFIG_PATH': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/x86_64-linux-gnu/pkgconfig:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/pkgconfig', 'USERNAME': 'liam-bouffard', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'WINDOWPATH': '2', 'PATH': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/bin:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/home/liam-bouffard/anaconda3/condabin:/home/liam-bouffard/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/liam-bouffard/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/vncserver', 'SESSION_MANAGER': 'local/liam-bouffard-Legion-7-16IRX9:@/tmp/.ICE-unix/2922,unix/liam-bouffard-Legion-7-16IRX9:/tmp/.ICE-unix/2922', 'INVOCATION_ID': '120c380b1b9547c59db8de0835d40501', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-e3a67ccfad.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/kilted', 'CONDA_PYTHON_EXE': '/home/liam-bouffard/anaconda3/bin/python', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/liam-bouffard/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/kilted:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor'}), 'shell': False}
+[5.626522] (-) TimerEvent: {}
+[5.660033] (stage_ros2) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/stage_node.dir/src/ranger.cpp.o\x1b[0m\n'}
+[5.660192] (stage_ros2) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/stage_node.dir/src/stage_node.cpp.o\x1b[0m\n'}
+[5.660242] (stage_ros2) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/stage_node.dir/src/vehicle.cpp.o\x1b[0m\n'}
+[5.660329] (stage_ros2) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/stage_node.dir/src/camera.cpp.o\x1b[0m\n'}
+[5.726619] (-) TimerEvent: {}
+[5.826894] (-) TimerEvent: {}
+[5.927197] (-) TimerEvent: {}
+[6.027506] (-) TimerEvent: {}
+[6.127812] (-) TimerEvent: {}
+[6.228126] (-) TimerEvent: {}
+[6.328420] (-) TimerEvent: {}
+[6.428742] (-) TimerEvent: {}
+[6.529062] (-) TimerEvent: {}
+[6.629384] (-) TimerEvent: {}
+[6.729718] (-) TimerEvent: {}
+[6.830044] (-) TimerEvent: {}
+[6.930358] (-) TimerEvent: {}
+[7.030679] (-) TimerEvent: {}
+[7.130915] (-) TimerEvent: {}
+[7.231233] (-) TimerEvent: {}
+[7.331555] (-) TimerEvent: {}
+[7.431857] (-) TimerEvent: {}
+[7.532156] (-) TimerEvent: {}
+[7.632451] (-) TimerEvent: {}
+[7.732796] (-) TimerEvent: {}
+[7.833089] (-) TimerEvent: {}
+[7.933388] (-) TimerEvent: {}
+[8.033734] (-) TimerEvent: {}
+[8.134066] (-) TimerEvent: {}
+[8.234307] (-) TimerEvent: {}
+[8.334553] (-) TimerEvent: {}
+[8.434790] (-) TimerEvent: {}
+[8.535048] (-) TimerEvent: {}
+[8.635287] (-) TimerEvent: {}
+[8.735543] (-) TimerEvent: {}
+[8.835910] (-) TimerEvent: {}
+[8.936282] (-) TimerEvent: {}
+[9.036612] (-) TimerEvent: {}
+[9.136872] (-) TimerEvent: {}
+[9.237201] (-) TimerEvent: {}
+[9.337516] (-) TimerEvent: {}
+[9.437807] (-) TimerEvent: {}
+[9.538139] (-) TimerEvent: {}
+[9.638386] (-) TimerEvent: {}
+[9.738723] (-) TimerEvent: {}
+[9.839023] (-) TimerEvent: {}
+[9.939399] (-) TimerEvent: {}
+[10.039672] (-) TimerEvent: {}
+[10.140032] (-) TimerEvent: {}
+[10.240292] (-) TimerEvent: {}
+[10.340686] (-) TimerEvent: {}
+[10.441074] (-) TimerEvent: {}
+[10.541456] (-) TimerEvent: {}
+[10.641847] (-) TimerEvent: {}
+[10.742232] (-) TimerEvent: {}
+[10.842613] (-) TimerEvent: {}
+[10.942967] (-) TimerEvent: {}
+[11.043317] (-) TimerEvent: {}
+[11.143700] (-) TimerEvent: {}
+[11.244058] (-) TimerEvent: {}
+[11.344403] (-) TimerEvent: {}
+[11.444724] (-) TimerEvent: {}
+[11.545102] (-) TimerEvent: {}
+[11.645475] (-) TimerEvent: {}
+[11.745843] (-) TimerEvent: {}
+[11.846217] (-) TimerEvent: {}
+[11.946622] (-) TimerEvent: {}
+[12.046981] (-) TimerEvent: {}
+[12.147268] (-) TimerEvent: {}
+[12.247555] (-) TimerEvent: {}
+[12.347846] (-) TimerEvent: {}
+[12.448140] (-) TimerEvent: {}
+[12.548412] (-) TimerEvent: {}
+[12.648700] (-) TimerEvent: {}
+[12.748983] (-) TimerEvent: {}
+[12.849280] (-) TimerEvent: {}
+[12.949501] (-) TimerEvent: {}
+[13.049816] (-) TimerEvent: {}
+[13.150098] (-) TimerEvent: {}
+[13.250411] (-) TimerEvent: {}
+[13.350706] (-) TimerEvent: {}
+[13.451033] (-) TimerEvent: {}
+[13.551309] (-) TimerEvent: {}
+[13.651595] (-) TimerEvent: {}
+[13.751892] (-) TimerEvent: {}
+[13.852212] (-) TimerEvent: {}
+[13.952511] (-) TimerEvent: {}
+[14.052818] (-) TimerEvent: {}
+[14.153134] (-) TimerEvent: {}
+[14.253480] (-) TimerEvent: {}
+[14.289297] (stage_ros2) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libstage_node.so\x1b[0m\n'}
+[14.353677] (-) TimerEvent: {}
+[14.454020] (-) TimerEvent: {}
+[14.554321] (-) TimerEvent: {}
+[14.654648] (-) TimerEvent: {}
+[14.754965] (-) TimerEvent: {}
+[14.797679] (stage_ros2) StdoutLine: {'line': b'[ 71%] Built target stage_node\n'}
+[14.832700] (stage_ros2) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/stage_ros2.dir/src/main.cpp.o\x1b[0m\n'}
+[14.855150] (-) TimerEvent: {}
+[14.955436] (-) TimerEvent: {}
+[15.055742] (-) TimerEvent: {}
+[15.155965] (-) TimerEvent: {}
+[15.256166] (-) TimerEvent: {}
+[15.356368] (-) TimerEvent: {}
+[15.456667] (-) TimerEvent: {}
+[15.557007] (-) TimerEvent: {}
+[15.657253] (-) TimerEvent: {}
+[15.757549] (-) TimerEvent: {}
+[15.857771] (-) TimerEvent: {}
+[15.958048] (-) TimerEvent: {}
+[16.058350] (-) TimerEvent: {}
+[16.158675] (-) TimerEvent: {}
+[16.259011] (-) TimerEvent: {}
+[16.359233] (-) TimerEvent: {}
+[16.459538] (-) TimerEvent: {}
+[16.559883] (-) TimerEvent: {}
+[16.660127] (-) TimerEvent: {}
+[16.760413] (-) TimerEvent: {}
+[16.860765] (-) TimerEvent: {}
+[16.961070] (-) TimerEvent: {}
+[17.061427] (-) TimerEvent: {}
+[17.161740] (-) TimerEvent: {}
+[17.261948] (-) TimerEvent: {}
+[17.362250] (-) TimerEvent: {}
+[17.462578] (-) TimerEvent: {}
+[17.562873] (-) TimerEvent: {}
+[17.663198] (-) TimerEvent: {}
+[17.763470] (-) TimerEvent: {}
+[17.863772] (-) TimerEvent: {}
+[17.964096] (-) TimerEvent: {}
+[18.064465] (-) TimerEvent: {}
+[18.116076] (stage_ros2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable stage_ros2\x1b[0m\n'}
+[18.164665] (-) TimerEvent: {}
+[18.264940] (-) TimerEvent: {}
+[18.365229] (-) TimerEvent: {}
+[18.465537] (-) TimerEvent: {}
+[18.466247] (stage_ros2) StdoutLine: {'line': b'[100%] Built target stage_ros2\n'}
+[18.475155] (stage_ros2) CommandEnded: {'returncode': 0}
+[18.475699] (stage_ros2) JobProgress: {'identifier': 'stage_ros2', 'progress': 'install'}
+[18.476112] (stage_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2'], 'cwd': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'liam-bouffard', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'ROS_PACKAGE_PATH': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib:/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/liam-bouffard', 'CHROME_DESKTOP': 'code.desktop', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src', 'TERM_PROGRAM_VERSION': '1.106.3', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2588', 'SYSTEMD_EXEC_PID': '2966', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '41521', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'liam-bouffard', 'JOURNAL_STREAM': '9:31705', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'PKG_CONFIG_PATH': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/x86_64-linux-gnu/pkgconfig:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/pkgconfig', 'USERNAME': 'liam-bouffard', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'WINDOWPATH': '2', 'PATH': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/bin:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/home/liam-bouffard/anaconda3/condabin:/home/liam-bouffard/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/liam-bouffard/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/vncserver', 'SESSION_MANAGER': 'local/liam-bouffard-Legion-7-16IRX9:@/tmp/.ICE-unix/2922,unix/liam-bouffard-Legion-7-16IRX9:/tmp/.ICE-unix/2922', 'INVOCATION_ID': '120c380b1b9547c59db8de0835d40501', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-e3a67ccfad.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/kilted', 'CONDA_PYTHON_EXE': '/home/liam-bouffard/anaconda3/bin/python', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/liam-bouffard/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/kilted:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor'}), 'shell': False}
+[18.481551] (stage_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.481829] (stage_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[18.482027] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/environment/library_path.sh\n'}
+[18.488354] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/environment/library_path.dsv\n'}
+[18.496349] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/demo.launch.py\n'}
+[18.502977] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/f710.launch.py\n'}
+[18.510114] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/rviz.launch.py\n'}
+[18.518378] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/rviz_ns.launch.py\n'}
+[18.528802] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/stage.launch.py\n'}
+[18.538042] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/cave.png\n'}
+[18.546696] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/hallway.pgm\n'}
+[18.556665] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/hallway.png\n'}
+[18.563103] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/line.png\n'}
+[18.565638] (-) TimerEvent: {}
+[18.571412] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/straden.png\n'}
+[18.580242] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/warehouse008.pgm\n'}
+[18.591473] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/warehouse032.pgm\n'}
+[18.602273] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/warehouse200.pgm\n'}
+[18.608326] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/willow-full.pgm\n'}
+[18.616690] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/cave.world\n'}
+[18.625961] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/cave_multi.world\n'}
+[18.635775] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/cave_seven_robots.world\n'}
+[18.645408] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/cave_three_robots.world\n'}
+[18.655218] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/hallway.world\n'}
+[18.665206] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/pioneer2dx.inc\n'}
+[18.665701] (-) TimerEvent: {}
+[18.673839] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/robots.inc\n'}
+[18.683243] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/lines.world\n'}
+[18.695170] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/straden.world\n'}
+[18.703100] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/willow-four-erratics-multisensor.world\n'}
+[18.710033] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/cave.rviz\n'}
+[18.719452] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/cave_seven_robots.rviz\n'}
+[18.730306] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/cave_three_robots.rviz\n'}
+[18.740293] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/lines.rviz\n'}
+[18.748538] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/robot0.rviz\n'}
+[18.758538] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/robot_ns.rviz\n'}
+[18.765839] (-) TimerEvent: {}
+[18.768633] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/robot_ns_depth.rviz\n'}
+[18.777840] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/teleop_twist_joy/f710.config.yaml\n'}
+[18.790451] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/lib/libstage_node.so\n'}
+[18.802569] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/lib/stage_ros2/stage_ros2\n'}
+[18.813114] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/ament_index/resource_index/package_run_dependencies/stage_ros2\n'}
+[18.820395] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/ament_index/resource_index/parent_prefix_path/stage_ros2\n'}
+[18.826884] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/environment/ament_prefix_path.sh\n'}
+[18.834820] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/environment/ament_prefix_path.dsv\n'}
+[18.843280] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/environment/path.sh\n'}
+[18.853644] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/environment/path.dsv\n'}
+[18.862597] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/local_setup.bash\n'}
+[18.865960] (-) TimerEvent: {}
+[18.872157] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/local_setup.sh\n'}
+[18.881542] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/local_setup.zsh\n'}
+[18.893802] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/local_setup.dsv\n'}
+[18.904468] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/package.dsv\n'}
+[18.914023] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/ament_index/resource_index/packages/stage_ros2\n'}
+[18.923327] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/cmake/stage_ros2Config.cmake\n'}
+[18.935206] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/cmake/stage_ros2Config-version.cmake\n'}
+[18.944740] (stage_ros2) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/package.xml\n'}
+[18.956072] (stage_ros2) CommandEnded: {'returncode': 0}
+[18.966235] (-) TimerEvent: {}
+[18.969360] (stage_ros2) JobEnded: {'identifier': 'stage_ros2', 'rc': 0}
+[18.970308] (-) EventReactorShutdown: {}

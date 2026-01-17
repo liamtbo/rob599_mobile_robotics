@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-bb6cce10bcbc7baf4674.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "stage_ros2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "stage_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stage_node-7fe9f81a1578b7b4ec93.json",
+					"name" : "stage_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stage_ros2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stage_ros2-cc55ea89c1270ba65586.json",
+					"name" : "stage_ros2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stage_ros2_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stage_ros2_uninstall-5487e993291aceb23182.json",
+					"name" : "stage_ros2_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-4b5ef251daadcb87f872.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2",
+		"source" : "/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src/stage_ros2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

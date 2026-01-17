@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src/stage_ros2" FILES "/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/stage_ros2")
