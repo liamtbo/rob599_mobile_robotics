@@ -1,2 +1,0 @@
-[console_scripts]
-pub = py_pubsub.pub:main

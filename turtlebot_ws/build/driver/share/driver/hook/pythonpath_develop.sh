@@ -1,0 +1,3 @@
+# generated from colcon_core/shell/template/hook_prepend_value.sh.em
+
+_colcon_prepend_unique_value PYTHONPATH "/home/liam-bouffard/Desktop/rob599_mobile_robotics/turtlebot_ws/build/driver"
