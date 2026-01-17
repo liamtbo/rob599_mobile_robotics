@@ -1,0 +1,113 @@
+subscriber and publisher
+    publisher node writes messages to a topic
+    subscriber node to the topic and reads teh messages
+
+service and client
+    client node requests job from client
+    service node requests job from
+
+msg and srv interfaces
+    structure for msg (used for sub pub)
+    structure for srv (used for service client)
+
+package.xml
+    "what do I depend on?"
+
+CMakeLists.txt
+    "what do I build, and how?"
+
+rosdep
+    identfying and installing package dependencies
+    depends on the manually populated package.xml
+
+actions
+    like client-service architecture, but with feedback on process of action being created
+    custom-define actions 
+        consists of request, result, and feedback
+
+strucutre
+    ros2_ws/
+        build/
+        install/
+        log/
+        src/
+            package1/
+                CMakeLists.txt
+                include/mypackage/
+                package.xml
+                src/
+                    node1.py
+            package2
+                .../
+
+Every terminal should have same ROS2 Domain ID
+    export ROS_DOMAIN_ID=0
+    echo $ROS_DOMAIN_ID
+
+source ros 2 installation in every terminal running ros commands
+    source /opt/ros/kilted/setup.bash
+
+create a workspace
+    mkdir -p ~/ros2_ws/src
+
+if cloning repo
+    cd ~/ros2_ws/src
+    git clone https://github.com/ros/ros_tutorials.git -b kilted
+|
+|
+if creating a package
+    cd ros2_ws/src
+    ros2 pkg create --build-type ament_python --license Apache-2.0 package_name
+    # create nodes files
+        cd ros2_ws/src/package_name/package_name
+        make noes
+    # add dependencies
+        cd ros2_ws/src/package_name/
+        # edit package.xml
+            # fill in <description>, <maintainer> and <license>
+                <exec_depend>rclpy</exec_depend>
+                <exec_depend>std_msgs</exec_depend>
+            # add dependencies corresponding to Node's imports
+                <exec_depend>rclpy</exec_depend>
+                <exec_depend>std_msgs</exec_depend>
+    # Add entry point (allows ros 2 to run node from terminal)
+        # edit setup.py
+            # fill in maintainer
+            # Add the following line within the console_scripts brackets of the entry_points field:
+                entry_points={
+                    'console_scripts': [
+                            'talker = py_pubsub.publisher_member_function:main',
+                    ],
+                },
+    # Check setup.cfg
+        # auto populated
+        # tells setuptools to put executables in lib, ros2 run will look here
+
+resolve dependencies
+    cd ros2_ws
+    rosdep install -i --from-path src --rosdistro kilted -y
+
+build
+    if building one package
+        colcon build --packages-select package
+    cd ros2_ws/
+    colcon build --symlink-install
+
+source overlay
+    cd ros2_ws/
+    source install/setup.bash
+
+run the package
+    cd ros2_ws/
+    ros2 run my_package my_node
+
+how to remove ros
+    sudo apt-get purge ros-*
+    sudo apt-get autoremove
+
+list all active nodes and topics
+    ros2 topic list
+    ros2 node list
+
+launch ros graph
+    rqt_graph

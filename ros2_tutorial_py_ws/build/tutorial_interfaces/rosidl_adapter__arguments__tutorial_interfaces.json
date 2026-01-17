@@ -1,0 +1,8 @@
+{
+  "package_name": "tutorial_interfaces",
+  "non_idl_tuples": [
+    "/home/liam-bouffard/Desktop/rob599_mobile_robotics/ros2_tutorial_py_ws/src/tutorial_interfaces:msg/Num.msg",
+    "/home/liam-bouffard/Desktop/rob599_mobile_robotics/ros2_tutorial_py_ws/src/tutorial_interfaces:msg/Sphere.msg",
+    "/home/liam-bouffard/Desktop/rob599_mobile_robotics/ros2_tutorial_py_ws/src/tutorial_interfaces:srv/AddThreeInts.srv"
+  ]
+}

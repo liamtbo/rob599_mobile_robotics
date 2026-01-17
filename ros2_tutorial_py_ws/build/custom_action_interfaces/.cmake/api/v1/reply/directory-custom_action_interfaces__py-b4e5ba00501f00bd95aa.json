@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "custom_action_interfaces__py",
+		"source" : "/home/liam-bouffard/Desktop/rob599_mobile_robotics/ros2_tutorial_py_ws/build/custom_action_interfaces/custom_action_interfaces__py"
+	}
+}

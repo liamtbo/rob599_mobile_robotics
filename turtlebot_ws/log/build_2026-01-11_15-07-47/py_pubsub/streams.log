@@ -1,0 +1,38 @@
+[0.610s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/src/py_pubsub': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/build/py_pubsub/build install --record /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/build/py_pubsub/install.log --single-version-externally-managed install_data
+[0.802s] running egg_info
+[0.802s] creating ../../build/py_pubsub/py_pubsub.egg-info
+[0.817s] writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[0.817s] writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[0.817s] writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[0.817s] writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[0.817s] writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[0.817s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[0.846s] reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[0.846s] adding license file 'LICENSE'
+[0.847s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[0.847s] running build
+[0.847s] running build_py
+[0.847s] creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/build/py_pubsub/build
+[0.847s] creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/build/py_pubsub/build/lib
+[0.847s] creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/build/py_pubsub/build/lib/py_pubsub
+[0.847s] copying py_pubsub/pub.py -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/build/py_pubsub/build/lib/py_pubsub
+[0.847s] copying py_pubsub/__init__.py -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/build/py_pubsub/build/lib/py_pubsub
+[0.847s] running install
+[0.851s] running install_lib
+[0.866s] creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub
+[0.866s] copying /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/build/py_pubsub/build/lib/py_pubsub/pub.py -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub
+[0.866s] copying /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/build/py_pubsub/build/lib/py_pubsub/__init__.py -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub
+[0.866s] byte-compiling /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub/pub.py to pub.cpython-312.pyc
+[0.866s] byte-compiling /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub/__init__.py to __init__.cpython-312.pyc
+[0.866s] running install_data
+[0.867s] creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/install/py_pubsub/share/ament_index
+[0.867s] creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/install/py_pubsub/share/ament_index/resource_index
+[0.867s] creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/install/py_pubsub/share/ament_index/resource_index/packages
+[0.867s] copying resource/py_pubsub -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/install/py_pubsub/share/ament_index/resource_index/packages
+[0.867s] copying package.xml -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/install/py_pubsub/share/py_pubsub
+[0.867s] running install_egg_info
+[0.882s] Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub-0.0.0-py3.12.egg-info
+[0.882s] running install_scripts
+[0.976s] Installing pub script to /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/install/py_pubsub/lib/py_pubsub
+[0.976s] writing list of installed files to '/home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/build/py_pubsub/install.log'
+[0.992s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/src/py_pubsub' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/build/py_pubsub/build install --record /home/liam-bouffard/Desktop/rob599_mobile_robotics/w1_ws/build/py_pubsub/install.log --single-version-externally-managed install_data

@@ -1,0 +1,15 @@
+{
+  "package_name": "tutorial_interfaces",
+  "output_dir": "/home/liam-bouffard/Desktop/rob599_mobile_robotics/ros2_tutorial_py_ws/build/tutorial_interfaces/rosidl_generator_type_description/tutorial_interfaces",
+  "idl_tuples": [
+    "/home/liam-bouffard/Desktop/rob599_mobile_robotics/ros2_tutorial_py_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/Num.idl",
+    "/home/liam-bouffard/Desktop/rob599_mobile_robotics/ros2_tutorial_py_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/Sphere.idl",
+    "/home/liam-bouffard/Desktop/rob599_mobile_robotics/ros2_tutorial_py_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:srv/AddThreeInts.idl"
+  ],
+  "include_paths": [
+    "geometry_msgs:/opt/ros/kilted/share/geometry_msgs",
+    "std_msgs:/opt/ros/kilted/share/std_msgs",
+    "service_msgs:/opt/ros/kilted/share/service_msgs",
+    "builtin_interfaces:/opt/ros/kilted/share/builtin_interfaces"
+  ]
+}
