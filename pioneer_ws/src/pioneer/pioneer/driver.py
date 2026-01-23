@@ -178,14 +178,56 @@ class Driver(Node):
         t = Twist()
         target_x = self.target.point.x
         target_y = self.target.point.y
-        angle = np.arctan2(target_y, target_x)
-        self.get_logger().info(f'target_x: {target_x}')
-        self.get_logger().info(f'target_y: {target_y}')
-        self.get_logger().info(f'angle: {angle}')
-        self.get_logger().info(f'distance error: {self.distance_error()}')
-        t.angular.z = angle * 0.1
-        t.linear.x = self.distance_error() * 0.05
+        target_angle = np.arctan2(target_y, target_x)
+        # self.get_logger().info(f'target_x: {target_x}')
+        # self.get_logger().info(f'target_y: {target_y}')
+        # self.get_logger().info(f'angle: {angle}')
+        # self.get_logger().info(f'distance error: {self.distance_error()}')
+        vfh_angle = self.vector_field_histogram(scan, target_angle)
+        t.angular.z = vfh_angle * 0.1
+        t.linear.x = self.distance_error() * 0.1
         return t
+
+    def vector_field_histogram(self, scan, target_angle, threshold=1, bin_size=10,):
+
+        # create polar histogram and associated angles parallel array
+        scan_dist = np.array(scan.ranges) # len(scan_values) = 180
+        scan_angle = np.linspace(scan.angle_min, scan.angle_max, len(scan.ranges))
+
+        dist_histogram = []
+        angle_histogram = []
+
+        num_bins = len(scan_dist) // bin_size
+    
+        for i in range(num_bins):
+            start = i * bin_size
+            end = min(start + bin_size, len(scan_dist))
+    
+            dist_bin = scan_dist[start:end].min()
+            dist_histogram.append(dist_bin)
+    
+            angle_histogram.append((scan_angle[start], scan_angle[end - 1]))
+
+        # find subranges below obstacle threshold
+        free_bins = [ angle_histogram[i] for i, d in enumerate(dist_histogram) if d >= threshold]
+
+        # if target angle is already free, use it
+        for low, high in free_bins:
+            if low <= target_angle <= high:
+                return target_angle
+
+        # find subrange with angle cloesest to target angle
+        optimal_angle = None
+        min_error = float('inf')
+    
+        for low, high in free_bins:
+            for candidate in (low, high):
+                err = abs(target_angle - candidate)
+                if err < min_error:
+                    min_error = err
+                    optimal_angle = candidate
+    
+        return optimal_angle
 
     def distance_error(self):
         target_x = self.target.point.x
