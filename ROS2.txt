@@ -121,6 +121,9 @@ tf2
     create a frame tree visual
         ros2 run tf2_tools view_frames
 
+    see what commands are being posted on the topic
+        ros2 topic echo /tf
+
     see transform between any two frames broadcasted over ROS
         ros2 run tf2_ros tf2_echo [source_frame] [target_frame]
 
