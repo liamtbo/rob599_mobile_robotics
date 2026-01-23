@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/goal_target/rosidl_generator_py/goal_target/goal_target_s__rosidl_typesupport_fastrtps_c.so" "TARGETS" "goal_target_s__rosidl_typesupport_fastrtps_c" "DESTINATION" "lib/python3.12/site-packages/goal_target")

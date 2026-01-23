@@ -111,3 +111,18 @@ list all active nodes and topics
 
 launch ros graph
     rqt_graph
+
+RViz
+    ros2 run rviz2 rviz2
+
+tf2
+    handles coordinate frames
+
+    create a frame tree visual
+        ros2 run tf2_tools view_frames
+
+    see transform between any two frames broadcasted over ROS
+        ros2 run tf2_ros tf2_echo [source_frame] [target_frame]
+
+    visualize with rvis2
+        ros2 run rviz2 rviz2 -d $(ros2 pkg prefix --share turtle_tf2_py)/rviz/turtle_rviz.rviz

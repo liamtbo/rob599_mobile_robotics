@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/src/goal_target" FILES "/opt/ros/kilted/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/goal_target/environment")

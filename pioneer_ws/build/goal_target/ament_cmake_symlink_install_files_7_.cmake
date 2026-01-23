@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/src/goal_target" FILES "/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/src/goal_target/action/GoalTarget.action" "DESTINATION" "share/goal_target/action")

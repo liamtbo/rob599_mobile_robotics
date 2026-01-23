@@ -132,6 +132,7 @@ def main(args=None):
             action_client.send_goal(10)
 
             rclpy.spin(action_client)
+    # clean end to program with ctrl + C
     except (KeyboardInterrupt, ExternalShutdownException):
         pass
 

@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from goal_target/action/GoalTarget.action
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/PointStamped.idl"
+#include "std_msgs/msg/Float32.idl"
+
+module goal_target {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal")
+    struct GoalTarget_Goal {
+      geometry_msgs::msg::PointStamped goal;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct GoalTarget_Result {
+      boolean success;
+    };
+    @verbatim (language="comment", text=
+      "Feeback")
+    struct GoalTarget_Feedback {
+      std_msgs::msg::Float32 distance;
+    };
+  };
+};

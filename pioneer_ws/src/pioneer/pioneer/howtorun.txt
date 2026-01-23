@@ -1,0 +1,10 @@
+
+cd ~/Desktop/rob599_mobile_robotics/pioneer_ws;
+rm -rf build install log; colcon build --symlink-install; 
+source /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/setup.bash;
+ros2 run pioneer driver;
+ros2 run pioneer send_points;
+
+cd ~/Desktop/rob599_mobile_robotics/stage_ws;
+source install/setup.bash;
+ros2 launch stage_ros2 stage.launch.py world:=cave enforce_prefixes:=false one_tf_tree:=true;

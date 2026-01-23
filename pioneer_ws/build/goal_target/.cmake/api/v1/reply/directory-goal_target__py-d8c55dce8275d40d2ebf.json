@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "goal_target__py",
+		"source" : "/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/goal_target/goal_target__py"
+	}
+}

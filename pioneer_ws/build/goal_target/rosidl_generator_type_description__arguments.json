@@ -1,0 +1,15 @@
+{
+  "package_name": "goal_target",
+  "output_dir": "/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/goal_target/rosidl_generator_type_description/goal_target",
+  "idl_tuples": [
+    "/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/goal_target/rosidl_adapter/goal_target:action/GoalTarget.idl"
+  ],
+  "include_paths": [
+    "builtin_interfaces:/opt/ros/kilted/share/builtin_interfaces",
+    "std_msgs:/opt/ros/kilted/share/std_msgs",
+    "geometry_msgs:/opt/ros/kilted/share/geometry_msgs",
+    "service_msgs:/opt/ros/kilted/share/service_msgs",
+    "action_msgs:/opt/ros/kilted/share/action_msgs",
+    "unique_identifier_msgs:/opt/ros/kilted/share/unique_identifier_msgs"
+  ]
+}
