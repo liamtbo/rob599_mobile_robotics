@@ -7,6 +7,7 @@
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/simple_world_launch.xml
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/stage.launch.py
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/cave.png
+/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/liams_rink.png
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/rink.png
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/simple_rooms.png
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/cave.world
@@ -17,6 +18,7 @@
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/pioneer2dx.inc
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/robots.inc
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/sick.inc
+/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/liams_rink.world
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/obstacle.world
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/simple.world
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/cave.rviz

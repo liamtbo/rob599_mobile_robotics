@@ -1,0 +1,56 @@
+[0.009s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2': CMAKE_PREFIX_PATH=/opt/ros/kilted:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(env3.14) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib:${LD_LIBRARY_PATH} PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/bin:${PATH} PKG_CONFIG_PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/x86_64-linux-gnu/pkgconfig:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/pkgconfig ROS_PACKAGE_PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share /usr/bin/cmake --build /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2 -- -j32 -l32
+[0.082s] [ 71%] Built target stage_node
+[0.106s] [100%] Built target stage_ros2
+[0.115s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/kilted:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(env3.14) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib:${LD_LIBRARY_PATH} PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/bin:${PATH} PKG_CONFIG_PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/x86_64-linux-gnu/pkgconfig:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/pkgconfig ROS_PACKAGE_PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share /usr/bin/cmake --build /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2 -- -j32 -l32
+[0.116s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2': CMAKE_PREFIX_PATH=/opt/ros/kilted:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(env3.14) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib:${LD_LIBRARY_PATH} PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/bin:${PATH} PKG_CONFIG_PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/x86_64-linux-gnu/pkgconfig:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/pkgconfig ROS_PACKAGE_PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share /usr/bin/cmake --install /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2
+[0.122s] -- Install configuration: ""
+[0.122s] -- Execute custom install script
+[0.122s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/environment/library_path.sh
+[0.122s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/environment/library_path.dsv
+[0.123s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/demo.launch.py
+[0.123s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/f710.launch.py
+[0.123s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/rviz.launch.py
+[0.123s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/rviz_ns.launch.py
+[0.123s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/simple_world_launch.xml
+[0.123s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/stage.launch.py
+[0.124s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/cave.png
+[0.124s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/liams_rink.png
+[0.124s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/rink.png
+[0.124s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/simple_rooms.png
+[0.124s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/cave.world
+[0.124s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/empty.world
+[0.124s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/box.inc
+[0.124s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/map.inc
+[0.124s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/pioneer.inc
+[0.124s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/pioneer2dx.inc
+[0.124s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/robots.inc
+[0.124s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/sick.inc
+[0.124s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/liams_rink.world
+[0.124s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/obstacle.world
+[0.124s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/simple.world
+[0.125s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/cave.rviz
+[0.125s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/cave_seven_robots.rviz
+[0.125s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/cave_three_robots.rviz
+[0.125s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/lines.rviz
+[0.125s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/robot0.rviz
+[0.125s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/robot_ns.rviz
+[0.125s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/robot_ns_depth.rviz
+[0.125s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/teleop_twist_joy/f710.config.yaml
+[0.125s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/lib/libstage_node.so
+[0.125s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/lib/stage_ros2/stage_ros2
+[0.125s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/ament_index/resource_index/package_run_dependencies/stage_ros2
+[0.126s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/ament_index/resource_index/parent_prefix_path/stage_ros2
+[0.126s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/environment/ament_prefix_path.sh
+[0.126s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/environment/ament_prefix_path.dsv
+[0.126s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/environment/path.sh
+[0.127s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/environment/path.dsv
+[0.127s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/local_setup.bash
+[0.127s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/local_setup.sh
+[0.127s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/local_setup.zsh
+[0.127s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/local_setup.dsv
+[0.127s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/package.dsv
+[0.134s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/ament_index/resource_index/packages/stage_ros2
+[0.134s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/cmake/stage_ros2Config.cmake
+[0.134s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/cmake/stage_ros2Config-version.cmake
+[0.134s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/package.xml
+[0.136s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/kilted:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(env3.14) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib:${LD_LIBRARY_PATH} PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/bin:${PATH} PKG_CONFIG_PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/x86_64-linux-gnu/pkgconfig:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/pkgconfig ROS_PACKAGE_PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share /usr/bin/cmake --install /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2
