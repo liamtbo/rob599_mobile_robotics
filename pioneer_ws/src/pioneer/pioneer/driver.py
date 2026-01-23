@@ -4,7 +4,7 @@ from rclpy.node import Node
 from rclpy.executors import ExternalShutdownException
 from rclpy.action import ActionServer, CancelResponse, GoalResponse
 
-from goal_target.action import GoalTarget
+# from goal_target.action import GoalTarget
 from rclpy.callback_groups import ReentrantCallbackGroup
 from sensor_msgs.msg import LaserScan
 from geometry_msgs.msg import Twist, PointStamped
@@ -122,37 +122,37 @@ class Driver(Node):
             self.get_logger().info(f'There is no target to set')
             self.target = None		
 
-    def action_callback(self, goal_handle):
-        self.get_logger().info(f"Executing goal: {goal_handle.request.goal.point}")
+    # def action_callback(self, goal_handle):
+    #     self.get_logger().info(f"Executing goal: {goal_handle.request.goal.point}")
 
-        self.goal = PointStamped()
-        self.goal.header = goal_handle.request.goal.header
-        self.goal.point = goal_handle.request.goal.point
+    #     self.goal = PointStamped()
+    #     self.goal.header = goal_handle.request.goal.header
+    #     self.goal.point = goal_handle.request.goal.point
 
-        result = GoalTarget.Result()
-        result.success = False
+    #     result = GoalTarget.Result()
+    #     result.success = False
 
-        self.set_target()
+    #     self.set_target()
         
-        rate = self.create_rate(20)   # 20 Hz (20 times per second)
+    #     rate = self.create_rate(20)   # 20 Hz (20 times per second)
 
-        while not self.close_enough:
-            feedback = GoalTarget.Feedback()
-            # feedback.distance.data = self.distance_to_target() TODO
-            feedback.distance.data = 4.0
-            goal_handle.publish_feedback(feedback)
-            # self.get_logger().info(f'in action loop')
-            rate.sleep()
+    #     while not self.close_enough:
+    #         feedback = GoalTarget.Feedback()
+    #         # feedback.distance.data = self.distance_to_target() TODO
+    #         feedback.distance.data = 4.0
+    #         goal_handle.publish_feedback(feedback)
+    #         # self.get_logger().info(f'in action loop')
+    #         rate.sleep()
 
-        self.goal = None
-        # self.cmd_pub.publish(self.zero_twist())
+    #     self.goal = None
+    #     # self.cmd_pub.publish(self.zero_twist())
 
-        self.get_logger().info(f'Completed goal')
+    #     self.get_logger().info(f'Completed goal')
 
-        goal_handle.succeed()
+    #     goal_handle.succeed()
 
-        result.success = True
-        return result
+    #     result.success = True
+    #     return result
 
     def scan_callback(self, scan):
 
