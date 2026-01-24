@@ -57,8 +57,8 @@ class Driver(Node):
         self.goal = PointStamped()
         self.goal.header.frame_id = 'robot/odom'
         self.goal.header.stamp = self.get_clock().now().to_msg()
-        self.goal.point.x = 4.0
-        self.goal.point.y = 4.0
+        self.goal.point.x = 5.0
+        self.goal.point.y = 0.0
         self.goal.point.z = 0.0
         
         # self.goal = (4,4)
@@ -179,12 +179,13 @@ class Driver(Node):
         target_x = self.target.point.x
         target_y = self.target.point.y
         target_angle = np.arctan2(target_y, target_x)
-        # self.get_logger().info(f'target_x: {target_x}')
-        # self.get_logger().info(f'target_y: {target_y}')
-        # self.get_logger().info(f'angle: {angle}')
-        # self.get_logger().info(f'distance error: {self.distance_error()}')
-        vfh_angle = self.vector_field_histogram(scan, target_angle)
-        t.angular.z = vfh_angle * 0.1
+        self.get_logger().info(f'target_x: {target_x}')
+        self.get_logger().info(f'target_y: {target_y}')
+        self.get_logger().info(f'angle: {target_angle}')
+        self.get_logger().info(f'distance error: {self.distance_error()}')
+        vfh_angle = self.vector_field_histogram(scan, target_angle, threshold=2)
+        self.get_logger().info(f'vfh angle: {vfh_angle}')
+        t.angular.z = vfh_angle * 2
         t.linear.x = self.distance_error() * 0.1
         return t
 
@@ -194,40 +195,52 @@ class Driver(Node):
         scan_dist = np.array(scan.ranges) # len(scan_values) = 180
         scan_angle = np.linspace(scan.angle_min, scan.angle_max, len(scan.ranges))
 
-        dist_histogram = []
-        angle_histogram = []
-
-        num_bins = len(scan_dist) // bin_size
-    
-        for i in range(num_bins):
-            start = i * bin_size
-            end = min(start + bin_size, len(scan_dist))
-    
+        dist_bins = []
+        angle_bins = []
+        bin_size = 3
+        
+        #         
+        for i in range(0, len(scan_dist), bin_size - 1):
+            start = i
+            end = min(i + (bin_size - 1) + 1, len(scan_dist)) # -1 bc that how bins overlap and +1 bc we want the end integer when slicing
             dist_bin = scan_dist[start:end].min()
-            dist_histogram.append(dist_bin)
-    
-            angle_histogram.append((scan_angle[start], scan_angle[end - 1]))
+            dist_bins.append(float(dist_bin))
+            angle_bins.append(scan_angle[start:end])
 
-        # find subranges below obstacle threshold
-        free_bins = [ angle_histogram[i] for i, d in enumerate(dist_histogram) if d >= threshold]
+        free_bins = []
+        free_angles = []
+        for i, dist in enumerate(dist_bins):
+            if dist >= threshold:
+                free_bins.append(dist)
+                free_angles.append(angle_bins[i])
 
-        # if target angle is already free, use it
-        for low, high in free_bins:
-            if low <= target_angle <= high:
-                return target_angle
-
-        # find subrange with angle cloesest to target angle
-        optimal_angle = None
-        min_error = float('inf')
-    
-        for low, high in free_bins:
-            for candidate in (low, high):
+        closest_angle = None
+        target_angle_bin = None
+        for angle_bin in free_angles:
+            if target_angle > angle_bin[-1]:
+                continue
+            target_angle_bin = angle_bin
+            min_error = float('inf')
+            for i, candidate in enumerate(angle_bin):
                 err = abs(target_angle - candidate)
                 if err < min_error:
                     min_error = err
-                    optimal_angle = candidate
+                    closest_angle = candidate
+                    target_angle_bin = angle_bin
+            break
+
+        # add padding to angle
+        padding = 1 # padding off the extremes of target_angle_bin
+        padded_angle = target_angle
+        if closest_angle == target_angle_bin[0]:
+            padded_angle_i = min(0 + padding, len(target_angle_bin) - 1)
+            padded_angle = target_angle_bin[padded_angle_i]
+        elif closest_angle == target_angle_bin[-1]:
+            padded_angle_i = min(len(target_angle_bin) - 1 - padding, 0)
+            padded_angle = target_angle_bin[padded_angle_i]
+        
+        return padded_angle
     
-        return optimal_angle
 
     def distance_error(self):
         target_x = self.target.point.x
