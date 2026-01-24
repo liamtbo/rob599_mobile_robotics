@@ -1,4 +1,5 @@
 import numpy as np
+import copy
 
 threshold = 5
 
@@ -13,7 +14,7 @@ scan_angle = np.linspace(-np.pi/2, np.pi/2, len(scan_dist))
 
 dist_bins = []
 angle_bins = []
-bin_size = 3
+bin_size = 2
 
 num_bins = len(scan_dist) // bin_size
 
@@ -27,7 +28,6 @@ for i in range(0, len(scan_dist), bin_size - 1):
 print(dist_bins)
 print(angle_bins)
 
-
 print('-------------------------')
 
 free_bins = []
@@ -37,10 +37,33 @@ for i, dist in enumerate(dist_bins):
         free_bins.append(dist)
         free_angles.append(angle_bins[i])
 
-print(free_bins)
+# print(free_bins)
 print(free_angles)
 
 print('-------------------------')
+
+# combine adjacent 
+grouped_angles = [] 
+local_group = copy.copy(free_angles[0])
+for i in range(1, len(free_angles)):
+    # print(f'free_angle: {free_angles[i]}')
+    if free_angles[i][0] == free_angles[i - 1][-1]:
+        # print('if path\n')
+        if len(free_angles) > 1:
+            local_group = np.concatenate((local_group, free_angles[i][1:])) # don't add a duplicate angle
+        if i == len(free_angles) - 1:
+            grouped_angles.append(local_group)
+    else:
+        # print(f'else path\n')
+        grouped_angles.append(local_group)
+        local_group = copy.copy(free_angles[i])
+        if i == len(free_angles) - 1:
+            grouped_angles.append(local_group)
+
+print(f'grouped angles:\n{grouped_angles}')
+
+print('-------------------------')
+
 
 
 target_angle = 0.5
@@ -48,7 +71,7 @@ target_angle = 0.5
 # find which angle bins is closest to target angle
 closest_angle = None
 target_angle_bin = None
-for angle_bin in free_angles:
+for angle_bin in grouped_angles:
     if target_angle > angle_bin[-1]:
         continue
     target_angle_bin = angle_bin
@@ -61,7 +84,7 @@ for angle_bin in free_angles:
             target_angle_bin = angle_bin
     break
 
-# return closest_angle
+# # return closest_angle
 print(closest_angle)
 print(target_angle_bin)
 
@@ -74,7 +97,7 @@ if closest_angle == target_angle_bin[0]:
     padded_angle_i = min(0 + padding, len(target_angle_bin) - 1)
     padded_angle = target_angle_bin[padded_angle_i]
 elif closest_angle == target_angle_bin[-1]:
-    padded_angle_i = min(len(target_angle_bin) - 1 - padding, 0)
+    padded_angle_i = max(len(target_angle_bin) - 1 - padding, 0)
     padded_angle = target_angle_bin[padded_angle_i]
 
 print(padded_angle)

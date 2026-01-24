@@ -26,7 +26,7 @@
 -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
 -- Added test 'lint_cmake' to check CMake code style
 -- Added test 'xmllint' to check XML markup files
--- Configuring done (2.8s)
+-- Configuring done (2.6s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/goal_target
 [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
@@ -44,31 +44,31 @@ reading manifest file 'goal_target.egg-info/SOURCES.txt'
 writing manifest file 'goal_target.egg-info/SOURCES.txt'
 [  8%] Built target ament_cmake_python_build_goal_target_egg
 [  8%] Built target goal_target__cpp
-[ 11%] [32mBuilding C object CMakeFiles/goal_target__rosidl_generator_c.dir/rosidl_generator_c/goal_target/action/detail/goal_target__description.c.o[0m
-[ 14%] [32mBuilding C object CMakeFiles/goal_target__rosidl_generator_c.dir/rosidl_generator_c/goal_target/action/detail/goal_target__functions.c.o[0m
-[ 17%] [32mBuilding C object CMakeFiles/goal_target__rosidl_generator_c.dir/rosidl_generator_c/goal_target/action/detail/goal_target__type_support.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/goal_target__rosidl_generator_c.dir/rosidl_generator_c/goal_target/action/detail/goal_target__type_support.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/goal_target__rosidl_generator_c.dir/rosidl_generator_c/goal_target/action/detail/goal_target__description.c.o[0m
+[ 17%] [32mBuilding C object CMakeFiles/goal_target__rosidl_generator_c.dir/rosidl_generator_c/goal_target/action/detail/goal_target__functions.c.o[0m
 [ 20%] [32m[1mLinking C shared library libgoal_target__rosidl_generator_c.so[0m
 [ 20%] Built target goal_target__rosidl_generator_c
 [ 23%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
-[ 26%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
-[ 29%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
-[ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 26%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 32%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
 [ 35%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
 [ 38%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
-[ 41%] [32mBuilding CXX object CMakeFiles/goal_target__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/goal_target/action/goal_target__type_support.cpp.o[0m
-[ 44%] [32mBuilding CXX object CMakeFiles/goal_target__rosidl_typesupport_c.dir/rosidl_typesupport_c/goal_target/action/goal_target__type_support.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/goal_target__rosidl_typesupport_c.dir/rosidl_typesupport_c/goal_target/action/goal_target__type_support.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/goal_target__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/goal_target/action/goal_target__type_support.cpp.o[0m
 [ 47%] [32mBuilding CXX object CMakeFiles/goal_target__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goal_target/action/detail/goal_target__type_support.cpp.o[0m
-[ 50%] [32mBuilding C object CMakeFiles/goal_target__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/goal_target/action/detail/goal_target__type_support.c.o[0m
-[ 52%] [32m[1mLinking CXX shared library libgoal_target__rosidl_typesupport_c.so[0m
+[ 50%] [32m[1mLinking CXX shared library libgoal_target__rosidl_typesupport_c.so[0m
+[ 52%] [32mBuilding C object CMakeFiles/goal_target__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/goal_target/action/detail/goal_target__type_support.c.o[0m
 [ 52%] Built target goal_target__rosidl_typesupport_c
 [ 55%] [32m[1mLinking C shared library libgoal_target__rosidl_typesupport_introspection_c.so[0m
 [ 58%] [32mBuilding CXX object CMakeFiles/goal_target__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/goal_target/action/detail/dds_fastrtps/goal_target__type_support.cpp.o[0m
 [ 58%] Built target goal_target__rosidl_typesupport_introspection_c
 [ 61%] [32mBuilding CXX object CMakeFiles/goal_target__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/goal_target/action/detail/goal_target__type_support_c.cpp.o[0m
 [ 64%] [32m[1mLinking CXX shared library libgoal_target__rosidl_typesupport_cpp.so[0m
+[ 64%] Built target goal_target__rosidl_typesupport_cpp
 [ 67%] [32m[1mLinking CXX shared library libgoal_target__rosidl_typesupport_introspection_cpp.so[0m
 [ 70%] [32m[1mLinking CXX shared library libgoal_target__rosidl_typesupport_fastrtps_c.so[0m
-[ 70%] Built target goal_target__rosidl_typesupport_cpp
 [ 70%] Built target goal_target__rosidl_typesupport_fastrtps_c
 [ 70%] Built target goal_target__rosidl_typesupport_introspection_cpp
 [ 73%] [32m[1mLinking CXX shared library libgoal_target__rosidl_typesupport_fastrtps_cpp.so[0m
@@ -80,14 +80,14 @@ writing manifest file 'goal_target.egg-info/SOURCES.txt'
 [ 82%] [32m[1mLinking C shared library libgoal_target__rosidl_generator_py.so[0m
 [ 82%] Built target goal_target__rosidl_generator_py
 [ 85%] [32mBuilding C object CMakeFiles/goal_target_s__rosidl_typesupport_c.dir/rosidl_generator_py/goal_target/_goal_target_s.ep.rosidl_typesupport_c.c.o[0m
-[ 88%] [32mBuilding C object CMakeFiles/goal_target_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/goal_target/_goal_target_s.ep.rosidl_typesupport_introspection_c.c.o[0m
-[ 91%] [32mBuilding C object CMakeFiles/goal_target_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/goal_target/_goal_target_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
-[ 94%] [32m[1mLinking C shared module rosidl_generator_py/goal_target/goal_target_s__rosidl_typesupport_fastrtps_c.so[0m
+[ 88%] [32mBuilding C object CMakeFiles/goal_target_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/goal_target/_goal_target_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/goal_target_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/goal_target/_goal_target_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 97%] [32m[1mLinking C shared module rosidl_generator_py/goal_target/goal_target_s__rosidl_typesupport_c.so[0m
 [ 97%] [32m[1mLinking C shared module rosidl_generator_py/goal_target/goal_target_s__rosidl_typesupport_introspection_c.so[0m
-[100%] [32m[1mLinking C shared module rosidl_generator_py/goal_target/goal_target_s__rosidl_typesupport_c.so[0m
-[100%] Built target goal_target_s__rosidl_typesupport_c
-[100%] Built target goal_target_s__rosidl_typesupport_introspection_c
+[100%] [32m[1mLinking C shared module rosidl_generator_py/goal_target/goal_target_s__rosidl_typesupport_fastrtps_c.so[0m
 [100%] Built target goal_target_s__rosidl_typesupport_fastrtps_c
+[100%] Built target goal_target_s__rosidl_typesupport_introspection_c
+[100%] Built target goal_target_s__rosidl_typesupport_c
 -- Install configuration: ""
 -- Execute custom install script
 -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/ament_index/resource_index/rosidl_interfaces/goal_target

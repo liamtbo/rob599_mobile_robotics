@@ -14,7 +14,7 @@ from tf2_ros.buffer import Buffer
 from tf2_geometry_msgs import do_transform_point
 
 import numpy
-
+import copy
 
 
 import numpy as np
@@ -185,11 +185,11 @@ class Driver(Node):
         self.get_logger().info(f'distance error: {self.distance_error()}')
         vfh_angle = self.vector_field_histogram(scan, target_angle, threshold=2)
         self.get_logger().info(f'vfh angle: {vfh_angle}')
-        t.angular.z = vfh_angle * 2
+        t.angular.z = vfh_angle
         t.linear.x = self.distance_error() * 0.1
         return t
 
-    def vector_field_histogram(self, scan, target_angle, threshold=1, bin_size=10,):
+    def vector_field_histogram(self, scan, target_angle, threshold=2, bin_size=10,):
 
         # create polar histogram and associated angles parallel array
         scan_dist = np.array(scan.ranges) # len(scan_values) = 180
@@ -197,9 +197,9 @@ class Driver(Node):
 
         dist_bins = []
         angle_bins = []
-        bin_size = 3
+        bin_size = 10
         
-        #         
+        # discretize the angles and distance
         for i in range(0, len(scan_dist), bin_size - 1):
             start = i
             end = min(i + (bin_size - 1) + 1, len(scan_dist)) # -1 bc that how bins overlap and +1 bc we want the end integer when slicing
@@ -207,16 +207,48 @@ class Driver(Node):
             dist_bins.append(float(dist_bin))
             angle_bins.append(scan_angle[start:end])
 
+        # testing TODO remove
+        # for i in range(len(dist_bins)):
+        #     self.get_logger().info(f'i: {i}')
+        #     self.get_logger().info(f'\tdist_bins: {dist_bins[i]}')
+        #     self.get_logger().info(f'\tangle_bins: {angle_bins[i]}')
+
+        # find bins that don't have an object near
+        # self.get_logger().info(f'Num of bins: {len(dist_bins)}')
         free_bins = []
         free_angles = []
         for i, dist in enumerate(dist_bins):
             if dist >= threshold:
                 free_bins.append(dist)
                 free_angles.append(angle_bins[i])
+        # self.get_logger().info(f'free_bins: {free_bins}')
+        # self.get_logger().info(f'Num of free bins: {len(free_bins)}')
 
+        # combine adjacent 
+        grouped_angles = [] 
+        local_group = copy.copy(free_angles[0])
+        for i in range(1, len(free_angles)):
+            # print(f'free_angle: {free_angles[i]}')
+            if free_angles[i][0] == free_angles[i - 1][-1]:
+                # print('if path\n')
+                if len(free_angles) > 1:
+                    local_group = np.concatenate((local_group, free_angles[i][1:])) # don't add a duplicate angle
+                if i == len(free_angles) - 1:
+                    grouped_angles.append(local_group)
+            else:
+                # print(f'else path\n')
+                grouped_angles.append(local_group)
+                local_group = copy.copy(free_angles[i])
+                if i == len(free_angles) - 1:
+                    grouped_angles.append(local_group)
+
+        # for i in range(len(grouped_angles)):
+        #     self.get_logger().info(f'Grouped Angle {i}: {grouped_angles[i]}')
+
+        # out of the free bins, which is closest to target angle
         closest_angle = None
         target_angle_bin = None
-        for angle_bin in free_angles:
+        for angle_bin in grouped_angles:
             if target_angle > angle_bin[-1]:
                 continue
             target_angle_bin = angle_bin
@@ -228,16 +260,23 @@ class Driver(Node):
                     closest_angle = candidate
                     target_angle_bin = angle_bin
             break
-
+        # self.get_logger().info(f'closest_angle: {closest_angle}')
+        # self.get_logger().info(f'target_angle_bin: {target_angle_bin}')
+        
         # add padding to angle
-        padding = 1 # padding off the extremes of target_angle_bin
+        # self.get_logger().info(f'target_angle_bin min: {target_angle_bin[0]}')
+        # self.get_logger().info(f'target_angle_bin max: {target_angle_bin[-1]}')
+
+        padding = 20 # padding off the extremes of target_angle_bin
         padded_angle = target_angle
+        padded_angle_i = None
         if closest_angle == target_angle_bin[0]:
             padded_angle_i = min(0 + padding, len(target_angle_bin) - 1)
             padded_angle = target_angle_bin[padded_angle_i]
         elif closest_angle == target_angle_bin[-1]:
-            padded_angle_i = min(len(target_angle_bin) - 1 - padding, 0)
+            padded_angle_i = max(len(target_angle_bin) - 1 - padding, 0)
             padded_angle = target_angle_bin[padded_angle_i]
+        # self.get_logger().info(f'padding_idx: {padded_angle_i}')
         
         return padded_angle
     

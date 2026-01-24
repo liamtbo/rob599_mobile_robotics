@@ -4,6 +4,7 @@ setup.py
 pioneer/__init__.py
 pioneer/driver.py
 pioneer/send_points.py
+pioneer/test_vfh.py
 pioneer.egg-info/PKG-INFO
 pioneer.egg-info/SOURCES.txt
 pioneer.egg-info/dependency_links.txt
