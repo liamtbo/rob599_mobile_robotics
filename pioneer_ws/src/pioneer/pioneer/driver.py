@@ -41,10 +41,6 @@ class Driver(Node):
         self.cmd_pub = self.create_publisher(Twist, '/cmd_vel', 1)
         # self.timer = self.create_timer(0.5, self.publish_cmd)
 
-        self.sub = self.create_subscription(LaserScan, '/base_scan', self.scan_callback, 10)
-        self.last_scan_time = self.get_clock().now()
-
-
         # listens for tf2 transformations and stores them in buffer for up to 10 seconds
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
@@ -54,20 +50,54 @@ class Driver(Node):
         # goal in world
         # self.goal = None
 
-        self.goal = PointStamped()
-        self.goal.header.frame_id = 'robot/odom'
-        self.goal.header.stamp = self.get_clock().now().to_msg()
-        self.goal.point.x = 5.0
-        self.goal.point.y = 0.0
-        self.goal.point.z = 0.0
-        
-        # self.goal = (4,4)
-        self.curr_goal_idx = 0
+        # For some reason, tf buffer lookup transform always fails on first pass, skipping the first point
+        # thus, i added this arbitrary first point to be skipped.
+        self.goal0 = PointStamped()
+        self.goal0.header.frame_id = 'robot/odom'
+        self.goal0.header.stamp = self.get_clock().now().to_msg()
+        self.goal0.point.x = 0.0
+        self.goal0.point.y = 0.0
+        self.goal0.point.z = 0.0
+
+        self.goal1 = PointStamped()
+        self.goal1.header.frame_id = 'robot/odom'
+        self.goal1.header.stamp = self.get_clock().now().to_msg()
+        self.goal1.point.x = 5.0
+        self.goal1.point.y = 0.0
+        self.goal1.point.z = 0.0
+
+        self.goal2 = PointStamped()
+        self.goal2.header.frame_id = 'robot/odom'
+        self.goal2.header.stamp = self.get_clock().now().to_msg()
+        self.goal2.point.x = 0.0
+        self.goal2.point.y = 5.0
+        self.goal2.point.z = 0.0
+
+        self.goal3 = PointStamped()
+        self.goal3.header.frame_id = 'robot/odom'
+        self.goal3.header.stamp = self.get_clock().now().to_msg()
+        self.goal3.point.x = -5.0
+        self.goal3.point.y = 0.0
+        self.goal3.point.z = 0.0
+
+        self.goal_list = [self.goal0, self.goal1, self.goal2, self.goal3]
+        self.goal_idx = 0
+        self.goal = self.goal_list[self.goal_idx]
+        self.get_logger().info(f'goal tuple: {(self.goal.point.x, self.goal.point.y, self.goal.point.z)}')
 
         # goal in robot coordinates
         self.target = PointStamped()
         self.target.point.x = 0.0
         self.target.point.y = 0.0
+        self.set_target()
+
+        self.get_logger().info(f'target x: {self.target.point.x}, target y: {self.target.point.y}')
+
+        self.done = False
+
+        self.sub = self.create_subscription(LaserScan, '/base_scan', self.scan_callback, 10)
+        self.last_scan_time = self.get_clock().now()
+
 
     def goal_accept_callback(self, goal_request):
         self.get_logger().info("Goal request received")
@@ -77,7 +107,7 @@ class Driver(Node):
         self.get_logger().info("Received cancel request from client")
         return CancelResponse.ACCEPT
 
-
+    # can't get this to work well
     # def action_callback(self, goal_handle):
     #     self.get_logger().info(f"Executing goal: {goal_handle.request.goal.point}")
 
@@ -118,7 +148,24 @@ class Driver(Node):
             return
         self.last_scan_time = now
 
-        self.get_logger().info('in scan callback')
+        if self.done:
+            self.cmd_pub.publish(Twist())  # stop robot
+            return
+
+        if self.distance_error() < 0.2:
+            # self.get_logger().info(f'distance_error: {self.distance_error()}')
+            # self.get_logger().info("Reached goal!")
+            self.get_logger().info(f'goal_idx: {self.goal_idx}')
+            if self.goal_idx + 1 <= len(self.goal_list) - 1:
+                self.goal_idx += 1
+            else:
+                self.get_logger().info('All Goals Completed')
+                self.done = True
+                return
+
+        self.goal = self.goal_list[self.goal_idx]
+
+        # self.get_logger().info('in scan callback')
         if self.goal:
             self.set_target()
             
@@ -130,8 +177,9 @@ class Driver(Node):
         self.cmd_pub.publish(t)
 
     def set_target(self):
-
+        self.get_logger().info('in set_target()')
         if self.goal:
+            self.get_logger().info('in set_target() and self.goal exists')
             try:
                 # query the listener for a specific transformation
                 # arguments: target frame, source frame, the time at which we want to transfofrm
@@ -165,13 +213,13 @@ class Driver(Node):
             self.target.point.x = rot_x
             self.target.point.y = rot_y
 
-            self.get_logger().info(f'worlds point: ({self.goal.point.x, self.goal.point.y})')
-            self.get_logger().info(f'robots point: ({self.target.point.x}, {self.target.point.y})')
+            # self.get_logger().info(f'worlds point: ({self.goal.point.x, self.goal.point.y})')
+            # self.get_logger().info(f'robots point: ({self.target.point.x}, {self.target.point.y})')
 
-            self.get_logger().info(f'goal with respect to robot: ({self.target.point.x:.2f}, {self.target.point.y:.2f}), orig ({self.goal.point.x, self.goal.point.y})')
+            # self.get_logger().info(f'goal with respect to robot: ({self.target.point.x:.2f}, {self.target.point.y:.2f}), orig ({self.goal.point.x, self.goal.point.y})')
             
         else:
-            self.get_logger().info(f'There is no target to set')
+            # self.get_logger().info(f'There is no target to set')
             self.target = None		
 
 
@@ -181,14 +229,15 @@ class Driver(Node):
         target_x = self.target.point.x
         target_y = self.target.point.y
         target_angle = np.arctan2(target_y, target_x)
-        self.get_logger().info(f'target_x: {target_x}')
-        self.get_logger().info(f'target_y: {target_y}')
-        self.get_logger().info(f'angle: {target_angle}')
-        self.get_logger().info(f'distance error: {self.distance_error()}')
-        vfh_angle = self.vector_field_histogram(scan, target_angle, threshold=2)
-        self.get_logger().info(f'vfh angle: {vfh_angle}')
-        t.angular.z = vfh_angle
-        t.linear.x = self.distance_error() * 0.1
+        # self.get_logger().info(f'target_x: {target_x}')
+        # self.get_logger().info(f'target_y: {target_y}')
+        # self.get_logger().info(f'angle: {target_angle}')
+        # self.get_logger().info(f'distance error: {self.distance_error()}')
+        # vfh_angle = self.vector_field_histogram(scan, target_angle, threshold=2)
+        # self.get_logger().info(f'vfh angle: {vfh_angle}')
+        # t.angular.z = vfh_angle
+        t.angular.z = target_angle * 0.4
+        t.linear.x = self.distance_error() * 0.3
         return t
 
     def vector_field_histogram(self, scan, target_angle, threshold=2, bin_size=10,):
