@@ -10,4 +10,4 @@ ros2 run pioneer send_points;
 
 cd ~/Desktop/rob599_mobile_robotics/stage_ws;
 source install/setup.bash;
-ros2 launch stage_ros2 stage.launch.py world:=empty enforce_prefixes:=false one_tf_tree:=true;
+ros2 launch stage_ros2 stage.launch.py world:=circle enforce_prefixes:=false one_tf_tree:=true;

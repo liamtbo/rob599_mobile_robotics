@@ -77,50 +77,6 @@ class Driver(Node):
         self.get_logger().info("Received cancel request from client")
         return CancelResponse.ACCEPT
 
-    def set_target(self):
-
-        if self.goal:
-            try:
-                # query the listener for a specific transformation
-                # arguments: target frame, source frame, the time at which we want to transfofrm
-                # transform = self.tf_buffer.lookup_transform('robot/base_link', 'robot/odom', rclpy.time.Time(), timeout=rclpy.duration.Duration(seconds=4.0))
-                transform = self.tf_buffer.lookup_transform(
-                    'robot/odom',
-                    'robot/base_link',
-                    rclpy.time.Time(),
-                    timeout=rclpy.duration.Duration(seconds=1.0)
-                )
-                
-            except Exception as e:
-                self.get_logger().warn(f'TF target lookup timed-out: {e}')
-                return
-            
-            # this applies transform to point but doesn't work right now TODO
-            # self.target = do_transform_point(self.goal, transform)
-
-			# This does the transform manually, by calculating the theta rotation from the quaternion
-            euler_ang = -np.arctan2(2 * transform.transform.rotation.z * transform.transform.rotation.w,
-                                1.0 - 2 * transform.transform.rotation.z * transform.transform.rotation.z)
-
-            # Translate to the base link's origin
-            x = self.goal.point.x - transform.transform.translation.x
-            y = self.goal.point.y - transform.transform.translation.y
-
-            # Do the rotation
-            rot_x = x * np.cos(euler_ang) - y * np.sin(euler_ang)
-            rot_y = x * np.sin(euler_ang) + y * np.cos(euler_ang)
-
-            self.target.point.x = rot_x
-            self.target.point.y = rot_y
-
-            self.get_logger().info(f'worlds point: ({self.goal.point.x, self.goal.point.y})')
-            self.get_logger().info(f'robots point: ({self.target.point.x}, {self.target.point.y})')
-
-            self.get_logger().info(f'goal with respect to robot: ({self.target.point.x:.2f}, {self.target.point.y:.2f}), orig ({self.goal.point.x, self.goal.point.y})')
-            
-        else:
-            self.get_logger().info(f'There is no target to set')
-            self.target = None		
 
     # def action_callback(self, goal_handle):
     #     self.get_logger().info(f"Executing goal: {goal_handle.request.goal.point}")
@@ -173,6 +129,52 @@ class Driver(Node):
         
         self.cmd_pub.publish(t)
 
+    def set_target(self):
+
+        if self.goal:
+            try:
+                # query the listener for a specific transformation
+                # arguments: target frame, source frame, the time at which we want to transfofrm
+                # transform = self.tf_buffer.lookup_transform('robot/base_link', 'robot/odom', rclpy.time.Time(), timeout=rclpy.duration.Duration(seconds=4.0))
+                transform = self.tf_buffer.lookup_transform(
+                    'robot/odom',
+                    'robot/base_link',
+                    rclpy.time.Time(),
+                    timeout=rclpy.duration.Duration(seconds=1.0)
+                )
+                
+            except Exception as e:
+                self.get_logger().warn(f'TF target lookup timed-out: {e}')
+                return
+            
+            # this applies transform to point but doesn't work right now TODO
+            # self.target = do_transform_point(self.goal, transform)
+
+			# This does the transform manually, by calculating the theta rotation from the quaternion
+            euler_ang = -np.arctan2(2 * transform.transform.rotation.z * transform.transform.rotation.w,
+                                1.0 - 2 * transform.transform.rotation.z * transform.transform.rotation.z)
+
+            # Translate to the base link's origin
+            x = self.goal.point.x - transform.transform.translation.x
+            y = self.goal.point.y - transform.transform.translation.y
+
+            # Do the rotation
+            rot_x = x * np.cos(euler_ang) - y * np.sin(euler_ang)
+            rot_y = x * np.sin(euler_ang) + y * np.cos(euler_ang)
+
+            self.target.point.x = rot_x
+            self.target.point.y = rot_y
+
+            self.get_logger().info(f'worlds point: ({self.goal.point.x, self.goal.point.y})')
+            self.get_logger().info(f'robots point: ({self.target.point.x}, {self.target.point.y})')
+
+            self.get_logger().info(f'goal with respect to robot: ({self.target.point.x:.2f}, {self.target.point.y:.2f}), orig ({self.goal.point.x, self.goal.point.y})')
+            
+        else:
+            self.get_logger().info(f'There is no target to set')
+            self.target = None		
+
+
     def get_twist(self, scan):
 
         t = Twist()
@@ -224,7 +226,7 @@ class Driver(Node):
         # self.get_logger().info(f'free_bins: {free_bins}')
         # self.get_logger().info(f'Num of free bins: {len(free_bins)}')
 
-        # combine adjacent 
+        # combine adjacent angle bins
         grouped_angles = [] 
         local_group = copy.copy(free_angles[0])
         for i in range(1, len(free_angles)):
