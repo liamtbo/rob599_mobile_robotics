@@ -28,7 +28,6 @@ setup(
     entry_points={
         'console_scripts': [
                 'driver = pioneer.driver:main',
-                'send_points = pioneer.send_points:main',
         ],
     },
 )
