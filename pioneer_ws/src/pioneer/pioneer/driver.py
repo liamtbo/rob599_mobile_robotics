@@ -16,12 +16,15 @@ from tf2_geometry_msgs import do_transform_point
 import numpy
 import copy
 
+# For publishing markers to rviz
+from visualization_msgs.msg import Marker
 
 import numpy as np
+
 """
-I noticed this project was very similar to intro 1's so I built based off intro 1's code.
-I didn't copy and paste anything in. I slowly developed it incrementally so that I could learn
-intuitively how the code is built.
+CITATION:
+This projects code is inspired from ROB intro 1's project. 
+That code was developed by Professor Bill Smart.
 """
 
 class Driver(Node):
@@ -62,22 +65,22 @@ class Driver(Node):
         self.goal1 = PointStamped()
         self.goal1.header.frame_id = 'robot/odom'
         self.goal1.header.stamp = self.get_clock().now().to_msg()
-        self.goal1.point.x = 5.0
-        self.goal1.point.y = 0.0
+        self.goal1.point.x = 7.0
+        self.goal1.point.y = 7.0
         self.goal1.point.z = 0.0
 
         self.goal2 = PointStamped()
         self.goal2.header.frame_id = 'robot/odom'
         self.goal2.header.stamp = self.get_clock().now().to_msg()
-        self.goal2.point.x = 0.0
-        self.goal2.point.y = 5.0
+        self.goal2.point.x = -5.0
+        self.goal2.point.y = -5.0
         self.goal2.point.z = 0.0
 
         self.goal3 = PointStamped()
         self.goal3.header.frame_id = 'robot/odom'
         self.goal3.header.stamp = self.get_clock().now().to_msg()
-        self.goal3.point.x = -5.0
-        self.goal3.point.y = 0.0
+        self.goal3.point.x = -3.0
+        self.goal3.point.y = -5.0
         self.goal3.point.z = 0.0
 
         self.goal_list = [self.goal0, self.goal1, self.goal2, self.goal3]
@@ -177,9 +180,7 @@ class Driver(Node):
         self.cmd_pub.publish(t)
 
     def set_target(self):
-        self.get_logger().info('in set_target()')
         if self.goal:
-            self.get_logger().info('in set_target() and self.goal exists')
             try:
                 # query the listener for a specific transformation
                 # arguments: target frame, source frame, the time at which we want to transfofrm
@@ -233,11 +234,11 @@ class Driver(Node):
         # self.get_logger().info(f'target_y: {target_y}')
         # self.get_logger().info(f'angle: {target_angle}')
         # self.get_logger().info(f'distance error: {self.distance_error()}')
-        # vfh_angle = self.vector_field_histogram(scan, target_angle, threshold=2)
+        vfh_angle = self.vector_field_histogram(scan, target_angle, threshold=2)
         # self.get_logger().info(f'vfh angle: {vfh_angle}')
-        # t.angular.z = vfh_angle
-        t.angular.z = target_angle * 0.4
-        t.linear.x = self.distance_error() * 0.3
+        t.angular.z = vfh_angle
+        # t.angular.z = target_angle * 0.4
+        t.linear.x = self.distance_error() * 0.5
         return t
 
     def vector_field_histogram(self, scan, target_angle, threshold=2, bin_size=10,):
@@ -276,6 +277,9 @@ class Driver(Node):
         # self.get_logger().info(f'Num of free bins: {len(free_bins)}')
 
         # combine adjacent angle bins
+        if len(free_angles) == 0:
+            return target_angle
+
         grouped_angles = [] 
         local_group = copy.copy(free_angles[0])
         for i in range(1, len(free_angles)):
@@ -298,7 +302,7 @@ class Driver(Node):
 
         # out of the free bins, which is closest to target angle
         closest_angle = None
-        target_angle_bin = None
+        target_angle_bin = np.array([])
         for angle_bin in grouped_angles:
             if target_angle > angle_bin[-1]:
                 continue
@@ -317,6 +321,9 @@ class Driver(Node):
         # add padding to angle
         # self.get_logger().info(f'target_angle_bin min: {target_angle_bin[0]}')
         # self.get_logger().info(f'target_angle_bin max: {target_angle_bin[-1]}')
+
+        if not target_angle_bin.any():
+            return target_angle
 
         padding = 20 # padding off the extremes of target_angle_bin
         padded_angle = target_angle

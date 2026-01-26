@@ -9,5 +9,6 @@ source /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/set
 ros2 run pioneer send_points;
 
 cd ~/Desktop/rob599_mobile_robotics/stage_ws;
+colcon build;
 source install/setup.bash;
 ros2 launch stage_ros2 stage.launch.py world:=circle enforce_prefixes:=false one_tf_tree:=true;

@@ -6,6 +6,11 @@ service and client
     client node requests job from client
     service node requests job from
 
+action server and client
+    like client-service architecture, but with feedback on process of action being created
+    custom-define actions 
+        consists of request, result, and feedback
+
 msg and srv interfaces
     structure for msg (used for sub pub)
     structure for srv (used for service client)
@@ -19,11 +24,6 @@ CMakeLists.txt
 rosdep
     identfying and installing package dependencies
     depends on the manually populated package.xml
-
-actions
-    like client-service architecture, but with feedback on process of action being created
-    custom-define actions 
-        consists of request, result, and feedback
 
 strucutre
     ros2_ws/
