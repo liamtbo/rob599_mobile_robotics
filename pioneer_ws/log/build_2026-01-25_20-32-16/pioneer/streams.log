@@ -1,0 +1,25 @@
+[0.573s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/src/pioneer': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/lib/python3.12/site-packages:/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages:/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer:/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pioneer build --build-base /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/build install --record /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/install.log --single-version-externally-managed install_data
+[0.769s] running egg_info
+[0.783s] writing ../../build/pioneer/pioneer.egg-info/PKG-INFO
+[0.783s] writing dependency_links to ../../build/pioneer/pioneer.egg-info/dependency_links.txt
+[0.783s] writing entry points to ../../build/pioneer/pioneer.egg-info/entry_points.txt
+[0.784s] writing requirements to ../../build/pioneer/pioneer.egg-info/requires.txt
+[0.784s] writing top-level names to ../../build/pioneer/pioneer.egg-info/top_level.txt
+[0.813s] reading manifest file '../../build/pioneer/pioneer.egg-info/SOURCES.txt'
+[0.813s] adding license file 'LICENSE'
+[0.814s] writing manifest file '../../build/pioneer/pioneer.egg-info/SOURCES.txt'
+[0.814s] running build
+[0.814s] running build_py
+[0.814s] running install
+[0.818s] running install_lib
+[0.833s] running install_data
+[0.833s] creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/share/pioneer/launch
+[0.833s] copying launch/pioneer_launch.py -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/share/pioneer/launch
+[0.834s] running install_egg_info
+[0.849s] removing '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/lib/python3.12/site-packages/pioneer-0.0.0-py3.12.egg-info' (and everything under it)
+[0.849s] Copying ../../build/pioneer/pioneer.egg-info to /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/lib/python3.12/site-packages/pioneer-0.0.0-py3.12.egg-info
+[0.850s] running install_scripts
+[0.945s] Installing driver script to /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/lib/pioneer
+[0.945s] Installing send_points script to /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/lib/pioneer
+[0.945s] writing list of installed files to '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/install.log'
+[0.965s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/src/pioneer' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/lib/python3.12/site-packages:/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages:/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer:/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pioneer build --build-base /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/build install --record /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/install.log --single-version-externally-managed install_data

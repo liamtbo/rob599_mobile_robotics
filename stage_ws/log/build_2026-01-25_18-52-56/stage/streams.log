@@ -1,0 +1,146 @@
+[0.011s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src/Stage -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage
+[0.029s] -- Stage version 4.3.0
+[0.029s] -- Operating system is Linux
+[0.029s] -- Installing Libraries to /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib
+[0.029s] -- Installing Plugins to /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3
+[0.029s] -- Build type RELEASE
+[0.029s] -- Checking for libtool
+[0.029s] -- Checking for required libraries...
+[0.224s] -- Checking for optional libraries...
+[0.224s] -- Installation path CMAKE_INSTALL_PREFIX=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage
+[0.225s] -- Configuring libstage
+[0.235s] -- Checking for one of the modules 'playercore>=2.1.0'
+[0.250s] --   * Player not detected. If Player is installed but not detected, check your PKG_CONFIG_PATH.
+[0.265s] -- Configuring done (0.2s)
+[0.319s] -- Generating done (0.0s)
+[0.327s] -- Build files have been written to: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage
+[0.335s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src/Stage -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage
+[0.335s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage -- -j32 -l32
+[0.475s] [ 57%] Built target stage
+[0.514s] [ 64%] Built target fasr
+[0.514s] [ 64%] Built target stagebinary
+[0.514s] [ 67%] Built target rasterize
+[0.518s] [ 71%] Built target lasernoise
+[0.521s] [ 74%] Built target pioneer_flocking
+[0.521s] [ 77%] Built target expand_swarm
+[0.522s] [ 81%] Built target source
+[0.524s] [ 86%] Built target fasr2
+[0.524s] [ 93%] Built target dynamic
+[0.524s] [ 93%] Built target expand_pioneer
+[0.525s] [ 96%] Built target sink
+[0.526s] [100%] Built target wander
+[0.545s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage -- -j32 -l32
+[0.558s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage
+[0.566s] -- Install configuration: "RELEASE"
+[0.566s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/pkgconfig/stage.pc
+[0.566s] -- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/cmake/Stage/stage-config.cmake
+[0.566s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/cmake/Stage/stage-config-version.cmake
+[0.566s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/bin/stage
+[0.567s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/libstage.so.4.3.0
+[0.567s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/libstage.so
+[0.567s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/include/Stage-4.3/stage.hh
+[0.567s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/fasr.so
+[0.567s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/sink.so
+[0.568s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/source.so
+[0.568s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/wander.so
+[0.568s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/pioneer_flocking.so
+[0.568s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/rasterize.so
+[0.569s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/lasernoise.so
+[0.569s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/dynamic.so
+[0.569s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/fasr2.so
+[0.569s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/blue.png
+[0.570s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/death.png
+[0.570s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/green.png
+[0.570s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/logo.png
+[0.571s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/mains.png
+[0.571s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/mainspower.png
+[0.571s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/question_mark.png
+[0.571s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/red.png
+[0.571s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/stagelogo.png
+[0.571s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/stall-old.png
+[0.572s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/stall.png
+[0.572s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/assets/rgb.txt
+[0.572s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/rgb.txt
+[0.572s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/amcl-sonar.cfg
+[0.572s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/autolab.cfg
+[0.572s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/camera.cfg
+[0.572s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/everything.cfg
+[0.572s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/lsp_test.cfg
+[0.572s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/mbicp.cfg
+[0.572s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/nd.cfg
+[0.572s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/roomba.cfg
+[0.572s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/simple.cfg
+[0.573s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/test.cfg
+[0.573s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/uoa_robotics_lab.cfg
+[0.573s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/vfh.cfg
+[0.573s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wavefront-remote.cfg
+[0.573s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wavefront.cfg
+[0.573s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi.cfg
+[0.573s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/SFU.world
+[0.573s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/autolab.world
+[0.573s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/camera.world
+[0.573s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/circuit.world
+[0.574s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/everything.world
+[0.574s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/fasr.world
+[0.575s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/fasr2.world
+[0.575s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/fasr_plan.world
+[0.575s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/large.world
+[0.575s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/lsp_test.world
+[0.575s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/mbicp.world
+[0.575s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/pioneer_flocking.world
+[0.576s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/pioneer_follow.world
+[0.576s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/pioneer_walle.world
+[0.577s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/roomba.world
+[0.577s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/sensor_noise_demo.world
+[0.577s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/sensor_noise_module_demo.world
+[0.577s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/simple.world
+[0.578s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/uoa_robotics_lab.world
+[0.578s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi.world
+[0.578s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/beacons.inc
+[0.579s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/chatterbox.inc
+[0.579s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/hokuyo.inc
+[0.579s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/irobot.inc
+[0.580s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/map.inc
+[0.580s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/objects.inc
+[0.580s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/pantilt.inc
+[0.580s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/pioneer.inc
+[0.581s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/sick.inc
+[0.581s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/ubot.inc
+[0.581s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/uoa_robotics_lab_models.inc
+[0.581s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/walle.inc
+[0.581s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/cfggen.sh
+[0.581s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/test.sh
+[0.581s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/worldgen.sh
+[0.581s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/expand_swarm.so
+[0.581s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib/Stage-4.3/expand_pioneer.so
+[0.581s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/889_05.png
+[0.581s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/SFU_1200x615.png
+[0.581s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/SRI-AIC-kwing.png
+[0.581s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/autolab.png
+[0.581s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/cave.png
+[0.582s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/cave_compact.png
+[0.582s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/cave_filled.png
+[0.582s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/frieburg.png
+[0.582s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/ghost.png
+[0.582s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/hospital.png
+[0.582s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/hospital_section.png
+[0.582s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/human_outline.png
+[0.582s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/mbicp.png
+[0.582s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/rink.png
+[0.582s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/sal2.png
+[0.582s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/simple_rooms.png
+[0.582s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/space_invader.png
+[0.582s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/submarine.png
+[0.582s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/submarine_small.png
+[0.582s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/table.png
+[0.582s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/bitmaps/uoa_robotics_lab.png
+[0.583s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi/commando.world
+[0.583s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi/hosp_wifi.world
+[0.583s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi/hosp_wifi_5.world
+[0.583s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi/wifi.world
+[0.583s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi/wifi_itu.world
+[0.583s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi/wifi_logdistance.world
+[0.583s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi/wifi_ray.world
+[0.583s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi/wifi_simple.world
+[0.583s] -- Up-to-date: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/share/stage/worlds/wifi/map.inc
+[0.583s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage

@@ -8,6 +8,7 @@
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/stage.launch.py
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/circle.png
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/office.png
+/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/warehouse.png
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/circle.world
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/box.inc
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/map.inc
@@ -16,6 +17,7 @@
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/robots.inc
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/sick.inc
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/office.world
+/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/warehouse.world
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/cave.rviz
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/cave_seven_robots.rviz
 /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/cave_three_robots.rviz

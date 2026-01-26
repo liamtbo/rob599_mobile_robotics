@@ -1,0 +1,124 @@
+[0.015s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2': CMAKE_PREFIX_PATH=/opt/ros/kilted:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/lib:/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib /usr/bin/cmake /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src/stage_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2
+[0.032s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[0.316s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.329s] -- Found rclcpp: 29.5.3 (/opt/ros/kilted/share/rclcpp/cmake)
+[0.365s] -- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+[0.377s] -- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+[0.394s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.414s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.496s] -- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+[0.498s] -- Found rmw_fastrtps_cpp: 9.3.3 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+[0.554s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.638s] -- Found rclcpp_components: 29.5.3 (/opt/ros/kilted/share/rclcpp_components/cmake)
+[0.673s] -- Found sensor_msgs: 5.5.1 (/opt/ros/kilted/share/sensor_msgs/cmake)
+[0.745s] -- Found nav_msgs: 5.5.1 (/opt/ros/kilted/share/nav_msgs/cmake)
+[0.779s] -- Found tf2_ros: 0.41.2 (/opt/ros/kilted/share/tf2_ros/cmake)
+[0.887s] -- Found tf2_geometry_msgs: 0.41.2 (/opt/ros/kilted/share/tf2_geometry_msgs/cmake)
+[0.892s] -- Found eigen3_cmake_module: 0.4.0 (/opt/ros/kilted/share/eigen3_cmake_module/cmake)
+[0.894s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.897s] -- Found std_srvs: 5.5.1 (/opt/ros/kilted/share/std_srvs/cmake)
+[0.920s] [0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+[0.920s]   ament_target_dependencies() is deprecated.  Use target_link_libraries()
+[0.920s]   with modern CMake targets instead.  Try replacing this call with:
+[0.920s] 
+[0.920s]     target_link_libraries(stage_node PUBLIC
+[0.920s]       ${geometry_msgs_TARGETS}
+[0.920s]       ${nav_msgs_TARGETS}
+[0.920s]       ${sensor_msgs_TARGETS}
+[0.920s]       ${std_msgs_TARGETS}
+[0.920s]       ${std_srvs_TARGETS}
+[0.920s]       rclcpp::rclcpp
+[0.920s]       rclcpp_components::component
+[0.920s]       rclcpp_components::component_manager
+[0.920s]       sensor_msgs::sensor_msgs_library
+[0.921s]       tf2_geometry_msgs::tf2_geometry_msgs
+[0.921s]       tf2_ros::static_transform_broadcaster_node
+[0.921s]       tf2_ros::tf2_ros
+[0.921s]     )
+[0.921s] 
+[0.921s] Call Stack (most recent call first):
+[0.921s]   CMakeLists.txt:34 (ament_target_dependencies)
+[0.921s] 
+[0.921s] [0m
+[0.924s] [0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+[0.924s]   ament_target_dependencies() is deprecated.  Use target_link_libraries()
+[0.924s]   with modern CMake targets instead.  Try replacing this call with:
+[0.924s] 
+[0.925s]     target_link_libraries(stage_ros2 PUBLIC
+[0.925s]       rclcpp::rclcpp
+[0.925s]     )
+[0.925s] 
+[0.925s] Call Stack (most recent call first):
+[0.925s]   CMakeLists.txt:51 (ament_target_dependencies)
+[0.925s] 
+[0.925s] [0m
+[0.926s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[1.053s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.053s] -- Configured cppcheck include dirs: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src/stage_ros2/./include;$<BUILD_INTERFACE:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src/stage_ros2/include>
+[1.054s] -- Configured cppcheck exclude dirs and/or files: 
+[1.054s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.054s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.056s] -- Added test 'lint_cmake' to check CMake code style
+[1.057s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.061s] -- Added test 'uncrustify' to check C / C++ code style
+[1.061s] -- Configured uncrustify additional arguments: 
+[1.062s] -- Added test 'xmllint' to check XML markup files
+[1.066s] -- Added test 'clang_format' to check C / C++ code style
+[1.066s] -- Added test 'pycodestyle' to check Python code against some of the style conventions in PEP 8
+[1.068s] -- Configuring done (1.0s)
+[1.097s] -- Generating done (0.0s)
+[1.105s] -- Build files have been written to: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2
+[1.116s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/kilted:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/lib:/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib /usr/bin/cmake /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src/stage_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2
+[1.117s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2': CMAKE_PREFIX_PATH=/opt/ros/kilted:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/lib:/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib /usr/bin/cmake --build /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2 -- -j32 -l32
+[1.229s] [ 71%] Built target stage_node
+[1.275s] [100%] Built target stage_ros2
+[1.290s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/kilted:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/lib:/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib /usr/bin/cmake --build /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2 -- -j32 -l32
+[1.292s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2': CMAKE_PREFIX_PATH=/opt/ros/kilted:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/lib:/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib /usr/bin/cmake --install /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2
+[1.302s] -- Install configuration: ""
+[1.303s] -- Execute custom install script
+[1.303s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/environment/library_path.sh
+[1.303s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/environment/library_path.dsv
+[1.304s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/demo.launch.py
+[1.304s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/f710.launch.py
+[1.304s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/rviz.launch.py
+[1.304s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/rviz_ns.launch.py
+[1.304s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/simple_world_launch.xml
+[1.304s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//launch/stage.launch.py
+[1.304s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/circle.png
+[1.304s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/office.png
+[1.304s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/bitmaps/warehouse.png
+[1.305s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/circle.world
+[1.305s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/box.inc
+[1.305s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/map.inc
+[1.305s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/pioneer.inc
+[1.305s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/pioneer2dx.inc
+[1.306s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/robots.inc
+[1.306s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/include/sick.inc
+[1.306s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/office.world
+[1.306s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//world/warehouse.world
+[1.306s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/cave.rviz
+[1.306s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/cave_seven_robots.rviz
+[1.306s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/cave_three_robots.rviz
+[1.306s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/lines.rviz
+[1.307s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/robot0.rviz
+[1.307s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/robot_ns.rviz
+[1.307s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/rviz/robot_ns_depth.rviz
+[1.307s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2//config/teleop_twist_joy/f710.config.yaml
+[1.307s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/lib/libstage_node.so
+[1.307s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/lib/stage_ros2/stage_ros2
+[1.307s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/ament_index/resource_index/package_run_dependencies/stage_ros2
+[1.308s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/ament_index/resource_index/parent_prefix_path/stage_ros2
+[1.308s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/environment/ament_prefix_path.sh
+[1.308s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/environment/ament_prefix_path.dsv
+[1.308s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/environment/path.sh
+[1.308s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/environment/path.dsv
+[1.309s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/local_setup.bash
+[1.309s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/local_setup.sh
+[1.309s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/local_setup.zsh
+[1.309s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/local_setup.dsv
+[1.310s] -- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/package.dsv
+[1.323s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/ament_index/resource_index/packages/stage_ros2
+[1.323s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/cmake/stage_ros2Config.cmake
+[1.323s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/cmake/stage_ros2Config-version.cmake
+[1.323s] -- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/share/stage_ros2/package.xml
+[1.326s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/kilted:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage/lib:/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/install/stage_ros2/lib:/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib /usr/bin/cmake --install /home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/build/stage_ros2

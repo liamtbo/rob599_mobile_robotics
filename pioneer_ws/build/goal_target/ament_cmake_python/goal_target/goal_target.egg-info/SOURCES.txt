@@ -4,3 +4,5 @@ goal_target.egg-info/PKG-INFO
 goal_target.egg-info/SOURCES.txt
 goal_target.egg-info/dependency_links.txt
 goal_target.egg-info/top_level.txt
+goal_target/action/__init__.py
+goal_target/action/_goal_target.py
