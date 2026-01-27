@@ -25,12 +25,8 @@ from visualization_msgs.msg import Marker
 
 import numpy as np
 
-
-ros_distro = os.environ.get('ROS_DISTRO', 'humble').lower()
-if ros_distro == 'humble':
-    from geometry_msgs.msg import Twist as CmdVelMsg
-else:
-    from geometry_msgs.msg import TwistStamped as CmdVelMsg
+from rclpy.qos import qos_profile_sensor_data
+from geometry_msgs.msg import TwistStamped as CmdVelMsg
 
 
 """
@@ -45,92 +41,49 @@ class Driver(Node):
 
         super().__init__('driver')
 
-        # self.action_server = ActionServer(node=self,
-        #                         action_type=GoalTarget,
-        #                         action_name="goal_target",
-        #                         callback_group=ReentrantCallbackGroup(), # allow multiple callbacks to run concurrently
-        #                         goal_callback=self.goal_accept_callback, # called when action client sends a goal
-        #                         cancel_callback=self.cancel_callback, # called when the client asks to cancel a running goal
-        #                         execute_callback=self.action_callback) # work function, runs to execute goal
-
         self.cmd_pub = self.create_publisher(CmdVelMsg, '/cmd_vel', 1)
-        t = CmdVelMsg()
 
-        # Set header
-        twist_stamped.header.stamp = node.get_clock().now().to_msg()
-        twist_stamped.header.frame_id = "base_link"  # or whatever frame
-        
-        # Set velocities
-        twist_stamped.twist.linear.x = 1.0   # forward 1 m/s
-        twist_stamped.twist.linear.y = 0.0
-        twist_stamped.twist.linear.z = 0.0
-        
-        twist_stamped.twist.angular.x = 0.0
-        twist_stamped.twist.angular.y = 0.0
-        twist_stamped.twist.angular.z = 0.0  # yaw 0.5 rad/s
-
-        self.cmd_pub.publish(t)
-
-        time.sleep()
-
-        twist_stamped = TwistStamped()
-        
-        twist_stamped.header.stamp = node.get_clock().now().to_msg()
-        twist_stamped.header.frame_id = "base_link"  # or whatever frame
-        
-        twist_stamped.twist.linear.x = 0.0   # forward 1 m/s
-        twist_stamped.twist.linear.y = 0.0
-        twist_stamped.twist.linear.z = 0.0
-        
-        twist_stamped.twist.angular.x = 0.0
-        twist_stamped.twist.angular.y = 0.0
-        twist_stamped.twist.angular.z = 0.0  # yaw 0.5 rad/s
-
-        rcply.shutdown()
-
-        self.cmd_pub.publish(t)
-
-        # self.timer = self.create_timer(0.5, self.publish_cmd)
+        self.timer = self.create_timer(0.5, self.publish_cmd)
 
         # listens for tf2 transformations and stores them in buffer for up to 10 seconds
-        # self.tf_buffer = Buffer()
-        # self.tf_listener = TransformListener(self.tf_buffer, self)
-# 
-        # self.close_enough = False
-# 
-        # self.target_marker = None
-        # self.target_pub = self.create_publisher(Marker, 'current_target', 1)
+        self.tf_buffer = Buffer()
+        self.tf_listener = TransformListener(self.tf_buffer, self)
 
-        # # For some reason, tf buffer lookup transform always fails on first pass, skipping the first point
-        # # thus, i added this arbitrary first point to be skipped.
-        # goal_coords = [
-        #     (0.0, 0.0),
-        #     (0.0, -5.0),
-        #     (4.0, -5.0),
-        #     (-4.0, -1.0),
-        #     (-7.0, -7.0)
-        # ]
+        self.close_enough = False
 
-        # self.goal_list = [self.make_goal(x, y) for x, y in goal_coords]
+        self.target_marker = None
+        self.target_pub = self.create_publisher(Marker, 'current_target', 1)
 
-        # self.goal_idx = 0
-        # self.goal = self.goal_list[self.goal_idx]
-        # self.get_logger().info(f'goal tuple: {(self.goal.point.x, self.goal.point.y, self.goal.point.z)}')
+        # For some reason, tf buffer lookup transform always fails on first pass, skipping the first point
+        # thus, i added this arbitrary first point to be skipped.
+        goal_coords = [
+            (0.0, 0.0),
+            (0.0, -5.0),
+            (4.0, -5.0),
+            (-4.0, -1.0),
+            (-7.0, -7.0)
+        ]
 
-        # # goal in robot coordinates
-        # self.target = PointStamped()
-        # self.target.point.x = 0.0
-        # self.target.point.y = 0.0
-        # self.set_target()
+        self.goal_list = [self.make_goal(x, y) for x, y in goal_coords]
 
-        # self.get_logger().info(f'target x: {self.target.point.x}, target y: {self.target.point.y}')
+        self.goal_idx = 0
+        self.goal = self.goal_list[self.goal_idx]
+        self.get_logger().info(f'goal tuple: {(self.goal.point.x, self.goal.point.y, self.goal.point.z)}')
 
-        # self.done = False
+        # goal in robot coordinates
+        self.target = PointStamped()
+        self.target.point.x = 0.0
+        self.target.point.y = 0.0
+        self.set_target()
 
-        # self.sub = self.create_subscription(LaserScan, '/base_scan', self.scan_callback, 10)
-        # self.last_scan_time = self.get_clock().now()
+        self.get_logger().info(f'target x: {self.target.point.x}, target y: {self.target.point.y}')
 
-        # self.marker_timer = self.create_timer(1.0, self._marker_callback)
+        self.done = False
+
+        self.sub = self.create_subscription('/scan', self.callback, qos_profile = qos_profile_sensor_data)
+        self.last_scan_time = self.get_clock().now()
+
+        self.marker_timer = self.create_timer(1.0, self._marker_callback)
 
     def make_goal(self, x, y, z=0.0, frame='robot/odom'):
         goal = PointStamped()
@@ -182,47 +135,6 @@ class Driver(Node):
         #   Will get turned back on when we get an goal request
         self.marker_timer.cancel()
 
-    # def goal_accept_callback(self, goal_request):
-    #     self.get_logger().info("Goal request received")
-    #     return GoalResponse.ACCEPT
-    
-    # def cancel_callback(self, goal_handle):
-    #     self.get_logger().info("Received cancel request from client")
-    #     return CancelResponse.ACCEPT
-
-    # can't get this to work well
-    # def action_callback(self, goal_handle):
-    #     self.get_logger().info(f"Executing goal: {goal_handle.request.goal.point}")
-
-    #     self.goal = PointStamped()
-    #     self.goal.header = goal_handle.request.goal.header
-    #     self.goal.point = goal_handle.request.goal.point
-
-    #     result = GoalTarget.Result()
-    #     result.success = False
-
-    #     self.set_target()
-        
-    #     rate = self.create_rate(20)   # 20 Hz (20 times per second)
-
-    #     while not self.close_enough:
-    #         feedback = GoalTarget.Feedback()
-    #         # feedback.distance.data = self.distance_to_target() TODO
-    #         feedback.distance.data = 4.0
-    #         goal_handle.publish_feedback(feedback)
-    #         # self.get_logger().info(f'in action loop')
-    #         rate.sleep()
-
-    #     self.goal = None
-    #     # self.cmd_pub.publish(self.zero_twist())
-
-    #     self.get_logger().info(f'Completed goal')
-
-    #     goal_handle.succeed()
-
-    #     result.success = True
-    #     return result
-
     def scan_callback(self, scan):
 
         # slow it down a bit
@@ -232,7 +144,7 @@ class Driver(Node):
         self.last_scan_time = now
 
         if self.done:
-            self.cmd_pub.publish(Twist())  # stop robot
+            self.cmd_pub.publish(TwistStamped())  # stop robot
             return
 
         if self.distance_error() < 0.2:
@@ -256,7 +168,7 @@ class Driver(Node):
             
             t = self.get_twist(scan)
         else:
-            t = Twist()
+            t = TwistStamped()
             self.get_logger().info(f'No goal to move towards')
         
         self.cmd_pub.publish(t)
@@ -308,7 +220,7 @@ class Driver(Node):
 
     def get_twist(self, scan):
 
-        t = Twist()
+        t = TwistStamped()
         target_x = self.target.point.x
         target_y = self.target.point.y
         target_angle = np.arctan2(target_y, target_x)
@@ -318,9 +230,9 @@ class Driver(Node):
         # self.get_logger().info(f'distance error: {self.distance_error()}')
         vfh_angle = self.vector_field_histogram(scan, target_angle, threshold=2)
         # self.get_logger().info(f'vfh angle: {vfh_angle}')
-        t.angular.z = vfh_angle
+        t.twist.angular.z = vfh_angle
         # t.angular.z = target_angle * 0.4
-        t.linear.x = self.distance_error() * 0.5
+        t.twist.linear.x = self.distance_error() * 0.5
         return t
 
     def vector_field_histogram(self, scan, target_angle, threshold=2, bin_size=10,):
@@ -426,15 +338,6 @@ class Driver(Node):
         target_y = self.target.point.y
         return np.sqrt(target_x**2 + target_y**2)
 
-
-    def publish_cmd(self):
-        t = Twist()
-        t.linear.x = 0.3
-        t.linear.y = 0.0
-        t.angular.z = 0.0
-        self.cmd_pub.publish(t)
-        self.get_logger().info('Publishing cmd_vel')
-        
 
 def main(args=None):
     try:
