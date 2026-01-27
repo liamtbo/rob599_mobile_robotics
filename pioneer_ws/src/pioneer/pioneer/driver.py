@@ -8,7 +8,8 @@ from rclpy.action import ActionServer, CancelResponse, GoalResponse
 # from goal_target.action import GoalTarget
 from rclpy.callback_groups import ReentrantCallbackGroup
 from sensor_msgs.msg import LaserScan
-from geometry_msgs.msg import Twist, PointStamped
+from geometry_msgs.msg import PointStamped
+# from geometry_msgs.msg import Twist
 
 from tf2_ros.transform_listener import TransformListener
 from tf2_ros.buffer import Buffer
@@ -17,10 +18,20 @@ from tf2_geometry_msgs import do_transform_point
 import numpy
 import copy
 
+import time
+
 # For publishing markers to rviz
 from visualization_msgs.msg import Marker
 
 import numpy as np
+
+
+ros_distro = os.environ.get('ROS_DISTRO', 'humble').lower()
+if ros_distro == 'humble':
+    from geometry_msgs.msg import Twist as CmdVelMsg
+else:
+    from geometry_msgs.msg import TwistStamped as CmdVelMsg
+
 
 """
 CITATION:
@@ -42,48 +53,84 @@ class Driver(Node):
         #                         cancel_callback=self.cancel_callback, # called when the client asks to cancel a running goal
         #                         execute_callback=self.action_callback) # work function, runs to execute goal
 
-        self.cmd_pub = self.create_publisher(Twist, '/cmd_vel', 1)
+        self.cmd_pub = self.create_publisher(CmdVelMsg, '/cmd_vel', 1)
+        t = CmdVelMsg()
+
+        # Set header
+        twist_stamped.header.stamp = node.get_clock().now().to_msg()
+        twist_stamped.header.frame_id = "base_link"  # or whatever frame
+        
+        # Set velocities
+        twist_stamped.twist.linear.x = 1.0   # forward 1 m/s
+        twist_stamped.twist.linear.y = 0.0
+        twist_stamped.twist.linear.z = 0.0
+        
+        twist_stamped.twist.angular.x = 0.0
+        twist_stamped.twist.angular.y = 0.0
+        twist_stamped.twist.angular.z = 0.0  # yaw 0.5 rad/s
+
+        self.cmd_pub.publish(t)
+
+        time.sleep()
+
+        twist_stamped = TwistStamped()
+        
+        twist_stamped.header.stamp = node.get_clock().now().to_msg()
+        twist_stamped.header.frame_id = "base_link"  # or whatever frame
+        
+        twist_stamped.twist.linear.x = 0.0   # forward 1 m/s
+        twist_stamped.twist.linear.y = 0.0
+        twist_stamped.twist.linear.z = 0.0
+        
+        twist_stamped.twist.angular.x = 0.0
+        twist_stamped.twist.angular.y = 0.0
+        twist_stamped.twist.angular.z = 0.0  # yaw 0.5 rad/s
+
+        rcply.shutdown()
+
+        self.cmd_pub.publish(t)
+
         # self.timer = self.create_timer(0.5, self.publish_cmd)
 
         # listens for tf2 transformations and stores them in buffer for up to 10 seconds
-        self.tf_buffer = Buffer()
-        self.tf_listener = TransformListener(self.tf_buffer, self)
+        # self.tf_buffer = Buffer()
+        # self.tf_listener = TransformListener(self.tf_buffer, self)
+# 
+        # self.close_enough = False
+# 
+        # self.target_marker = None
+        # self.target_pub = self.create_publisher(Marker, 'current_target', 1)
 
-        self.close_enough = False
+        # # For some reason, tf buffer lookup transform always fails on first pass, skipping the first point
+        # # thus, i added this arbitrary first point to be skipped.
+        # goal_coords = [
+        #     (0.0, 0.0),
+        #     (0.0, -5.0),
+        #     (4.0, -5.0),
+        #     (-4.0, -1.0),
+        #     (-7.0, -7.0)
+        # ]
 
-        self.target_marker = None
-        self.target_pub = self.create_publisher(Marker, 'current_target', 1)
+        # self.goal_list = [self.make_goal(x, y) for x, y in goal_coords]
 
-        # For some reason, tf buffer lookup transform always fails on first pass, skipping the first point
-        # thus, i added this arbitrary first point to be skipped.
-        goal_coords = [
-            (0.0, 0.0),
-            (0.0, -5.0),
-            (4.0, -5.0),
-            (-4.0, -1.0),
-            (-7.0, -7.0)
-        ]
+        # self.goal_idx = 0
+        # self.goal = self.goal_list[self.goal_idx]
+        # self.get_logger().info(f'goal tuple: {(self.goal.point.x, self.goal.point.y, self.goal.point.z)}')
 
-        self.goal_list = [self.make_goal(x, y) for x, y in goal_coords]
+        # # goal in robot coordinates
+        # self.target = PointStamped()
+        # self.target.point.x = 0.0
+        # self.target.point.y = 0.0
+        # self.set_target()
 
-        self.goal_idx = 0
-        self.goal = self.goal_list[self.goal_idx]
-        self.get_logger().info(f'goal tuple: {(self.goal.point.x, self.goal.point.y, self.goal.point.z)}')
+        # self.get_logger().info(f'target x: {self.target.point.x}, target y: {self.target.point.y}')
 
-        # goal in robot coordinates
-        self.target = PointStamped()
-        self.target.point.x = 0.0
-        self.target.point.y = 0.0
-        self.set_target()
+        # self.done = False
 
-        self.get_logger().info(f'target x: {self.target.point.x}, target y: {self.target.point.y}')
+        # self.sub = self.create_subscription(LaserScan, '/base_scan', self.scan_callback, 10)
+        # self.last_scan_time = self.get_clock().now()
 
-        self.done = False
-
-        self.sub = self.create_subscription(LaserScan, '/base_scan', self.scan_callback, 10)
-        self.last_scan_time = self.get_clock().now()
-
-        self.marker_timer = self.create_timer(1.0, self._marker_callback)
+        # self.marker_timer = self.create_timer(1.0, self._marker_callback)
 
     def make_goal(self, x, y, z=0.0, frame='robot/odom'):
         goal = PointStamped()
@@ -396,6 +443,7 @@ def main(args=None):
             rclpy.spin(driver)
     except (KeyboardInterrupt, ExternalShutdownException):
         pass
+        
 
 if __name__ == '__main__':
     main()
