@@ -1,1 +1,94 @@
-/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src/stage_ros2/world/warehouse.world
+# structure derived from Bill Smart, smartw@oregonstate.edu
+
+include "include/pioneer.inc"
+include "include/map.inc"
+include "include/sick.inc"
+include "include/box.inc"
+
+
+resolution 0.02
+
+
+speedup 1
+
+window
+(
+    size [700 700]
+    scale 440
+    center [ 0 0 ]
+    rotate [0 0 ]
+
+    show_data 1
+)
+
+floorplan
+(
+    name "warehouse"
+    size [ 16 16 16 ]
+    pose [ 0 0 0 0 ]
+    bitmap "bitmaps/warehouse.png"
+)
+
+pioneer2dx_base_no_sonar
+(
+    name "robot"
+    pose [ 0 0 0 0 ]
+    sicklaser ( pose [ 0 0 0 0 ] )
+    trail_length 400
+)
+
+
+# robot avoids obstacle in sim for simple cases
+# box(name "box1" pose [ 2 0 0 0 ])
+# box(name "box2" pose [ 3 2.5 0 0 ])
+# box(name "box3" pose [ -4 1 0 0 ])
+
+# robot avoids obstacles in sim for complicated cases
+box(name "box1" pose [ 2 -2.5 0 0 ])
+box(name "box1" pose [ 2 -2 0 0 ])
+box(name "box1" pose [ 2 -1.5 0 0 ])
+box(name "box1" pose [ 2 -1 0 0 ])
+box(name "box2" pose [ 2 -0.5 0 0 ])
+box(name "box2" pose [ 2 0 0 0 ])
+box(name "box3" pose [ 2 .5 0 0 ])
+box(name "box4" pose [ 2 1 0 0 ])
+box(name "box5" pose [ 2 1.5 0 0 ])
+box(name "box6" pose [ 2 3 0 0 ])
+box(name "box6" pose [ 2 -3 0 0 ])
+box(name "box6" pose [ 2 -3.5 0 0 ])
+box(name "box6" pose [ 2 -4 0 0 ])
+box(name "box6" pose [ 2 -4.5 0 0 ])
+box(name "box6" pose [ 2 -5 0 0 ])
+box(name "box6" pose [ 2 -5.5 0 0 ])
+box(name "box6" pose [ 2 -6 0 0 ])
+box(name "box6" pose [ 2 -6.5 0 0 ])
+box(name "box6" pose [ 2 -7 0 0 ])
+box(name "box6" pose [ 2 -7.5 0 0 ])
+box(name "box6" pose [ 2 -8 0 0 ])
+
+
+box(name "box6" pose [ 3 3 0 0 ])
+box(name "box7" pose [ 5 5 0 0 ])
+box(name "box7" pose [ 6 6 0 0 ])
+box(name "box7" pose [ 7 7 0 0 ])
+
+# scatter in -x, y category
+box(name "box10" pose [ -1.2 2.5 0 0 ])
+box(name "box11" pose [ -3.7 6.1 0 0 ])
+box(name "box12" pose [ -0.5 1.0 0 0 ])
+box(name "box13" pose [ -4.2 7.5 0 0 ])
+box(name "box14" pose [ -2.8 0.3 0 0 ])
+box(name "box15" pose [ -6.5 3.2 0 0 ])
+box(name "box16" pose [ -7.9 1.5 0 0 ])
+box(name "box18" pose [ -5.3 5.9 0 0 ])
+box(name "box19" pose [ -3.1 2.1 0 0 ])
+box(name "box20" pose [ -2.0 6.8 0 0 ])
+box(name "box21" pose [ -7.0 7.4 0 0 ])
+box(name "box22" pose [ -1.5 0.7 0 0 ])
+box(name "box23" pose [ -4.9 1.2 0 0 ])
+box(name "box24" pose [ -6.2 0.5 0 0 ])
+box(name "box25" pose [ -3.8 3.9 0 0 ])
+box(name "box26" pose [ -0.3 7.7 0 0 ])
+box(name "box27" pose [ -5.6 2.6 0 0 ])
+box(name "box28" pose [ -2.4 5.0 0 0 ])
+box(name "box29" pose [ -7.5 6.0 0 0 ])

@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_files("/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws/src/stage_ros2" FILES "/opt/ros/kilted/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/stage_ros2/environment")
