@@ -1,0 +1,20 @@
+[1.015s] Invoking command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/lib/python3.12/site-packages:/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages:/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer:/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/build --no-deps symlink_data --force
+[1.419s] running develop
+[1.673s] running egg_info
+[1.698s] writing pioneer.egg-info/PKG-INFO
+[1.699s] writing dependency_links to pioneer.egg-info/dependency_links.txt
+[1.699s] writing entry points to pioneer.egg-info/entry_points.txt
+[1.699s] writing requirements to pioneer.egg-info/requires.txt
+[1.699s] writing top-level names to pioneer.egg-info/top_level.txt
+[1.750s] reading manifest file 'pioneer.egg-info/SOURCES.txt'
+[1.751s] writing manifest file 'pioneer.egg-info/SOURCES.txt'
+[1.778s] running build_ext
+[1.778s] Creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/lib/python3.12/site-packages/pioneer.egg-link (link to .)
+[1.779s] Installing driver script to /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/lib/pioneer
+[1.779s] 
+[1.779s] Installed /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer
+[1.779s] running symlink_data
+[1.779s] symbolically linking /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/resource/pioneer -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/share/ament_index/resource_index/packages
+[1.779s] symbolically linking /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/package.xml -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/share/pioneer
+[1.780s] symbolically linking /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/launch/driver_launch.py -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/share/pioneer/launch
+[1.812s] Invoked command in '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/lib/python3.12/site-packages:/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages:/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer:/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/build --no-deps symlink_data --force

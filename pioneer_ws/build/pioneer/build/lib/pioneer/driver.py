@@ -8,7 +8,7 @@ from rclpy.action import ActionServer, CancelResponse, GoalResponse
 # from goal_target.action import GoalTarget
 from rclpy.callback_groups import ReentrantCallbackGroup
 from sensor_msgs.msg import LaserScan
-from geometry_msgs.msg import Twist, PointStamped
+from geometry_msgs.msg import Twist, PointStamped, Point
 
 from tf2_ros.transform_listener import TransformListener
 from tf2_ros.buffer import Buffer
@@ -56,35 +56,23 @@ class Driver(Node):
 
         # For some reason, tf buffer lookup transform always fails on first pass, skipping the first point
         # thus, i added this arbitrary first point to be skipped.
-        self.goal0 = PointStamped()
-        self.goal0.header.frame_id = 'robot/odom'
-        self.goal0.header.stamp = self.get_clock().now().to_msg()
-        self.goal0.point.x = 0.0
-        self.goal0.point.y = 0.0
-        self.goal0.point.z = 0.0
+        # goal_coords = [
+        #     (0.0, 0.0),
+        #     (0.0, -5.0),
+        #     (4.0, -5.0),
+        #     (-4.0, -1.0),
+        #     (-7.0, -7.0)
+        # ]
 
-        self.goal1 = PointStamped()
-        self.goal1.header.frame_id = 'robot/odom'
-        self.goal1.header.stamp = self.get_clock().now().to_msg()
-        self.goal1.point.x = 5.0
-        self.goal1.point.y = 0.0
-        self.goal1.point.z = 0.0
+        goal_coords = [
+            PointStamped(point=Point(x=-7.0, y=4.0, z=0.0)),
+            PointStamped(point=Point(x=-7.0, y=-7.0, z=0.0)),
+            PointStamped(point=Point(x=3.0, y=-6.0, z=0.0)),
+            
+        ]
 
-        self.goal2 = PointStamped()
-        self.goal2.header.frame_id = 'robot/odom'
-        self.goal2.header.stamp = self.get_clock().now().to_msg()
-        self.goal2.point.x = 0.0
-        self.goal2.point.y = 5.0
-        self.goal2.point.z = 0.0
+        # self.goal_list = [self.make_goal(x, y) for x, y in goal_coords]
 
-        self.goal3 = PointStamped()
-        self.goal3.header.frame_id = 'robot/odom'
-        self.goal3.header.stamp = self.get_clock().now().to_msg()
-        self.goal3.point.x = -5.0
-        self.goal3.point.y = -0.0
-        self.goal3.point.z = 0.0
-
-        self.goal_list = [self.goal0, self.goal1, self.goal2, self.goal3]
         self.goal_idx = 0
         self.goal = self.goal_list[self.goal_idx]
         self.get_logger().info(f'goal tuple: {(self.goal.point.x, self.goal.point.y, self.goal.point.z)}')
@@ -104,7 +92,16 @@ class Driver(Node):
 
         self.marker_timer = self.create_timer(1.0, self._marker_callback)
 
-
+    # def make_goal(self, x, y, z=0.0, frame='robot/odom'):
+    #     goal = PointStamped()
+    #     goal.header.frame_id = frame
+    #     goal.header.stamp = self.get_clock().now().to_msg()
+    #     goal.point.x = x
+    #     goal.point.y = y
+    #     goal.point.z = z
+    #     return goal
+    
+    # taken from Bill Smart, smartw@oregonstate.edu intro to robotics 1 code
     def _marker_callback(self):
         """Publishes the target so it shows up in RViz"""
         if not self.goal:

@@ -8,7 +8,7 @@ from rclpy.action import ActionServer, CancelResponse, GoalResponse
 # from goal_target.action import GoalTarget
 from rclpy.callback_groups import ReentrantCallbackGroup
 from sensor_msgs.msg import LaserScan
-from geometry_msgs.msg import Twist, PointStamped
+from geometry_msgs.msg import Twist, PointStamped, Point
 
 from tf2_ros.transform_listener import TransformListener
 from tf2_ros.buffer import Buffer
@@ -56,15 +56,29 @@ class Driver(Node):
 
         # For some reason, tf buffer lookup transform always fails on first pass, skipping the first point
         # thus, i added this arbitrary first point to be skipped.
-        goal_coords = [
-            (0.0, 0.0),
-            (0.0, -5.0),
-            (4.0, -5.0),
-            (-4.0, -1.0),
-            (-7.0, -7.0)
-        ]
+        # goal_coords = [
+        #     (0.0, 0.0),
+        #     (0.0, -5.0),
+        #     (4.0, -5.0),
+        #     (-4.0, -1.0),
+        #     (-7.0, -7.0)
+        # ]
 
-        self.goal_list = [self.make_goal(x, y) for x, y in goal_coords]
+        # self.goal_list = [
+        #     PointStamped(point=Point(x=-7.0, y=4.0, z=0.0)),
+        #     PointStamped(point=Point(x=-7.0, y=-7.0, z=0.0)),
+        #     PointStamped(point=Point(x=3.0, y=-6.0, z=0.0)),   
+        # ]
+        self.goal_list = [
+            PointStamped(point=Point(x=0.0, y=0.0, z=0.0)),
+            PointStamped(point=Point(x=-5.0, y=-5.0, z=0.0)),
+            PointStamped(point=Point(x=0.0, y=4.0, z=0.0)),
+            PointStamped(point=Point(x=-5.0, y=5.0, z=0.0)),
+            PointStamped(point=Point(x=3.5, y=4.0, z=0.0)),
+        ]
+        
+
+        # self.goal_list = [self.make_goal(x, y) for x, y in goal_coords]
 
         self.goal_idx = 0
         self.goal = self.goal_list[self.goal_idx]
@@ -85,14 +99,14 @@ class Driver(Node):
 
         self.marker_timer = self.create_timer(1.0, self._marker_callback)
 
-    def make_goal(self, x, y, z=0.0, frame='robot/odom'):
-        goal = PointStamped()
-        goal.header.frame_id = frame
-        goal.header.stamp = self.get_clock().now().to_msg()
-        goal.point.x = x
-        goal.point.y = y
-        goal.point.z = z
-        return goal
+    # def make_goal(self, x, y, z=0.0, frame='robot/odom'):
+    #     goal = PointStamped()
+    #     goal.header.frame_id = frame
+    #     goal.header.stamp = self.get_clock().now().to_msg()
+    #     goal.point.x = x
+    #     goal.point.y = y
+    #     goal.point.z = z
+    #     return goal
     
     # taken from Bill Smart, smartw@oregonstate.edu intro to robotics 1 code
     def _marker_callback(self):
@@ -221,8 +235,8 @@ class Driver(Node):
                 # arguments: target frame, source frame, the time at which we want to transfofrm
                 # transform = self.tf_buffer.lookup_transform('robot/base_link', 'robot/odom', rclpy.time.Time(), timeout=rclpy.duration.Duration(seconds=4.0))
                 transform = self.tf_buffer.lookup_transform(
-                    'robot/odom',
-                    'robot/base_link',
+                    'robot_0/odom',
+                    'robot_0/base_link',
                     rclpy.time.Time(),
                     timeout=rclpy.duration.Duration(seconds=1.0)
                 )
@@ -271,9 +285,9 @@ class Driver(Node):
         # self.get_logger().info(f'distance error: {self.distance_error()}')
         vfh_angle = self.vector_field_histogram(scan, target_angle, threshold=2)
         # self.get_logger().info(f'vfh angle: {vfh_angle}')
-        t.angular.z = vfh_angle
+        t.angular.z = vfh_angle 
         # t.angular.z = target_angle * 0.4
-        t.linear.x = self.distance_error() * 0.5
+        t.linear.x = self.distance_error() * 0.3
         return t
 
     def vector_field_histogram(self, scan, target_angle, threshold=2, bin_size=10,):

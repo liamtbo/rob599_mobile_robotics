@@ -1,0 +1,18 @@
+running develop
+running egg_info
+writing pioneer.egg-info/PKG-INFO
+writing dependency_links to pioneer.egg-info/dependency_links.txt
+writing entry points to pioneer.egg-info/entry_points.txt
+writing requirements to pioneer.egg-info/requires.txt
+writing top-level names to pioneer.egg-info/top_level.txt
+reading manifest file 'pioneer.egg-info/SOURCES.txt'
+writing manifest file 'pioneer.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/lib/python3.12/site-packages/pioneer.egg-link (link to .)
+Installing driver script to /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/lib/pioneer
+
+Installed /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer
+running symlink_data
+symbolically linking /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/resource/pioneer -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/share/ament_index/resource_index/packages
+symbolically linking /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/package.xml -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/share/pioneer
+symbolically linking /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/launch/driver_launch.py -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/share/pioneer/launch

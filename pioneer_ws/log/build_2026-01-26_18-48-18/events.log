@@ -1,0 +1,351 @@
+[0.000000] (-) TimerEvent: {}
+[0.000685] (goal_target) JobQueued: {'identifier': 'goal_target', 'dependencies': OrderedDict()}
+[0.000737] (pioneer) JobQueued: {'identifier': 'pioneer', 'dependencies': OrderedDict({'goal_target': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target'})}
+[0.000773] (goal_target) JobStarted: {'identifier': 'goal_target'}
+[0.009575] (goal_target) JobProgress: {'identifier': 'goal_target', 'progress': 'cmake'}
+[0.010393] (goal_target) Command: {'cmd': ['/usr/bin/cmake', '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/src/goal_target', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target'], 'cwd': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/goal_target', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'liam-bouffard', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/liam-bouffard', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2917', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'liam-bouffard', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'liam-bouffard', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'WINDOWPATH': '2', 'PATH': '/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/home/liam-bouffard/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/vncserver', 'SESSION_MANAGER': 'local/liam-bouffard-Legion-7-16IRX9:@/tmp/.ICE-unix/2874,unix/liam-bouffard-Legion-7-16IRX9:/tmp/.ICE-unix/2874', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/04b5d060_cc56_408e_b24f_24daee6bd2c3', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.161', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/kilted', 'CONDA_PYTHON_EXE': '/home/liam-bouffard/anaconda3/bin/python', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/goal_target', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/liam-bouffard/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/opt/ros/kilted'}), 'shell': False}
+[0.098987] (goal_target) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.099617] (-) TimerEvent: {}
+[0.198324] (goal_target) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.199717] (-) TimerEvent: {}
+[0.225249] (goal_target) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299951] (-) TimerEvent: {}
+[0.356402] (goal_target) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.376089] (goal_target) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.376537] (goal_target) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.377480] (goal_target) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.397596] (goal_target) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400219] (-) TimerEvent: {}
+[0.500688] (-) TimerEvent: {}
+[0.563974] (goal_target) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.578977] (goal_target) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.579655] (goal_target) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.580058] (goal_target) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.583820] (goal_target) StdoutLine: {'line': b'-- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)\n'}
+[0.600861] (-) TimerEvent: {}
+[0.701168] (-) TimerEvent: {}
+[0.769076] (goal_target) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.801306] (-) TimerEvent: {}
+[0.861812] (goal_target) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.897724] (goal_target) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.7.1 (/opt/ros/kilted/share/rosidl_default_generators/cmake)\n'}
+[0.901382] (-) TimerEvent: {}
+[0.904025] (goal_target) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.961918] (goal_target) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.001591] (-) TimerEvent: {}
+[1.012674] (goal_target) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.9.5 (/opt/ros/kilted/share/rosidl_adapter/cmake)\n'}
+[1.017297] (goal_target) StdoutLine: {'line': b'-- Found std_msgs: 5.5.1 (/opt/ros/kilted/share/std_msgs/cmake)\n'}
+[1.056904] (goal_target) StdoutLine: {'line': b'-- Found geometry_msgs: 5.5.1 (/opt/ros/kilted/share/geometry_msgs/cmake)\n'}
+[1.101725] (-) TimerEvent: {}
+[1.202244] (-) TimerEvent: {}
+[1.302732] (-) TimerEvent: {}
+[1.403400] (-) TimerEvent: {}
+[1.504027] (-) TimerEvent: {}
+[1.604749] (-) TimerEvent: {}
+[1.705254] (-) TimerEvent: {}
+[1.805643] (-) TimerEvent: {}
+[1.906172] (-) TimerEvent: {}
+[2.006522] (-) TimerEvent: {}
+[2.106978] (-) TimerEvent: {}
+[2.193574] (goal_target) StdoutLine: {'line': b'-- Found ament_cmake_ros_core: 0.14.3 (/opt/ros/kilted/share/ament_cmake_ros_core/cmake)\n'}
+[2.207130] (-) TimerEvent: {}
+[2.307563] (-) TimerEvent: {}
+[2.407993] (-) TimerEvent: {}
+[2.508458] (-) TimerEvent: {}
+[2.608878] (-) TimerEvent: {}
+[2.709337] (-) TimerEvent: {}
+[2.809757] (-) TimerEvent: {}
+[2.829843] (goal_target) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.909990] (-) TimerEvent: {}
+[3.010306] (-) TimerEvent: {}
+[3.110720] (-) TimerEvent: {}
+[3.211089] (-) TimerEvent: {}
+[3.311606] (-) TimerEvent: {}
+[3.411940] (-) TimerEvent: {}
+[3.512259] (-) TimerEvent: {}
+[3.612629] (-) TimerEvent: {}
+[3.643420] (goal_target) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.712753] (-) TimerEvent: {}
+[3.813145] (-) TimerEvent: {}
+[3.913422] (-) TimerEvent: {}
+[4.013752] (-) TimerEvent: {}
+[4.114094] (-) TimerEvent: {}
+[4.136591] (goal_target) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[4.204457] (goal_target) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)\n'}
+[4.214279] (-) TimerEvent: {}
+[4.227481] (goal_target) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.228722] (goal_target) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.232977] (goal_target) StdoutLine: {'line': b'-- Configuring done (4.2s)\n'}
+[4.279750] (goal_target) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[4.293861] (goal_target) StdoutLine: {'line': b'-- Build files have been written to: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/goal_target\n'}
+[4.305028] (goal_target) CommandEnded: {'returncode': 0}
+[4.305580] (goal_target) JobProgress: {'identifier': 'goal_target', 'progress': 'build'}
+[4.306481] (goal_target) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/goal_target', '--', '-j32', '-l32'], 'cwd': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/goal_target', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'liam-bouffard', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/liam-bouffard', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2917', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'liam-bouffard', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'liam-bouffard', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'WINDOWPATH': '2', 'PATH': '/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/home/liam-bouffard/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/vncserver', 'SESSION_MANAGER': 'local/liam-bouffard-Legion-7-16IRX9:@/tmp/.ICE-unix/2874,unix/liam-bouffard-Legion-7-16IRX9:/tmp/.ICE-unix/2874', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/04b5d060_cc56_408e_b24f_24daee6bd2c3', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.161', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/kilted', 'CONDA_PYTHON_EXE': '/home/liam-bouffard/anaconda3/bin/python', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/goal_target', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/liam-bouffard/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/opt/ros/kilted'}), 'shell': False}
+[4.314462] (-) TimerEvent: {}
+[4.370234] (goal_target) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[4.376631] (goal_target) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_symlink_goal_target\n'}
+[4.414593] (-) TimerEvent: {}
+[4.514971] (-) TimerEvent: {}
+[4.615373] (-) TimerEvent: {}
+[4.626151] (goal_target) StdoutLine: {'line': b'[  2%] Built target goal_target__rosidl_generator_type_description\n'}
+[4.640388] (goal_target) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.653954] (goal_target) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.655202] (goal_target) StdoutLine: {'line': b'running egg_info\n'}
+[4.656227] (goal_target) StdoutLine: {'line': b'creating goal_target.egg-info\n'}
+[4.681211] (goal_target) StdoutLine: {'line': b'writing goal_target.egg-info/PKG-INFO\n'}
+[4.681442] (goal_target) StdoutLine: {'line': b'writing dependency_links to goal_target.egg-info/dependency_links.txt\n'}
+[4.681579] (goal_target) StdoutLine: {'line': b'writing top-level names to goal_target.egg-info/top_level.txt\n'}
+[4.681786] (goal_target) StdoutLine: {'line': b"writing manifest file 'goal_target.egg-info/SOURCES.txt'\n"}
+[4.715544] (-) TimerEvent: {}
+[4.756271] (goal_target) StdoutLine: {'line': b"reading manifest file 'goal_target.egg-info/SOURCES.txt'\n"}
+[4.756826] (goal_target) StdoutLine: {'line': b"writing manifest file 'goal_target.egg-info/SOURCES.txt'\n"}
+[4.788473] (goal_target) StdoutLine: {'line': b'[  8%] Built target ament_cmake_python_build_goal_target_egg\n'}
+[4.815716] (-) TimerEvent: {}
+[4.916031] (-) TimerEvent: {}
+[5.016381] (-) TimerEvent: {}
+[5.116757] (-) TimerEvent: {}
+[5.119002] (goal_target) StdoutLine: {'line': b'[  8%] Built target goal_target__cpp\n'}
+[5.143856] (goal_target) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/goal_target__rosidl_generator_c.dir/rosidl_generator_c/goal_target/action/detail/goal_target__functions.c.o\x1b[0m\n'}
+[5.144676] (goal_target) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/goal_target__rosidl_generator_c.dir/rosidl_generator_c/goal_target/action/detail/goal_target__description.c.o\x1b[0m\n'}
+[5.145957] (goal_target) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/goal_target__rosidl_generator_c.dir/rosidl_generator_c/goal_target/action/detail/goal_target__type_support.c.o\x1b[0m\n'}
+[5.216991] (-) TimerEvent: {}
+[5.317415] (-) TimerEvent: {}
+[5.341787] (goal_target) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libgoal_target__rosidl_generator_c.so\x1b[0m\n'}
+[5.386334] (goal_target) StdoutLine: {'line': b'[ 20%] Built target goal_target__rosidl_generator_c\n'}
+[5.399758] (goal_target) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.400060] (goal_target) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.400690] (goal_target) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.401061] (goal_target) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.401470] (goal_target) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.401576] (goal_target) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[5.417506] (-) TimerEvent: {}
+[5.517799] (-) TimerEvent: {}
+[5.618157] (-) TimerEvent: {}
+[5.718582] (-) TimerEvent: {}
+[5.737044] (goal_target) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/goal_target__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/goal_target/action/goal_target__type_support.cpp.o\x1b[0m\n'}
+[5.737457] (goal_target) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/goal_target__rosidl_typesupport_c.dir/rosidl_typesupport_c/goal_target/action/goal_target__type_support.cpp.o\x1b[0m\n'}
+[5.805521] (goal_target) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX shared library libgoal_target__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.808624] (goal_target) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/goal_target__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/goal_target/action/detail/goal_target__type_support.cpp.o\x1b[0m\n'}
+[5.818730] (-) TimerEvent: {}
+[5.821968] (goal_target) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/goal_target__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/goal_target/action/detail/goal_target__type_support.c.o\x1b[0m\n'}
+[5.858465] (goal_target) StdoutLine: {'line': b'[ 52%] Built target goal_target__rosidl_typesupport_c\n'}
+[5.903158] (goal_target) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking C shared library libgoal_target__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.918923] (-) TimerEvent: {}
+[5.928557] (goal_target) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/goal_target__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/goal_target/action/detail/dds_fastrtps/goal_target__type_support.cpp.o\x1b[0m\n'}
+[5.951524] (goal_target) StdoutLine: {'line': b'[ 58%] Built target goal_target__rosidl_typesupport_introspection_c\n'}
+[5.959482] (goal_target) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/goal_target__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/goal_target/action/detail/goal_target__type_support_c.cpp.o\x1b[0m\n'}
+[6.019126] (-) TimerEvent: {}
+[6.119429] (-) TimerEvent: {}
+[6.219792] (-) TimerEvent: {}
+[6.320202] (-) TimerEvent: {}
+[6.420479] (-) TimerEvent: {}
+[6.446487] (goal_target) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libgoal_target__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[6.520681] (-) TimerEvent: {}
+[6.536320] (goal_target) StdoutLine: {'line': b'[ 64%] Built target goal_target__rosidl_typesupport_cpp\n'}
+[6.567640] (goal_target) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libgoal_target__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.613865] (goal_target) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libgoal_target__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[6.620916] (-) TimerEvent: {}
+[6.633305] (goal_target) StdoutLine: {'line': b'[ 70%] Built target goal_target__rosidl_typesupport_fastrtps_c\n'}
+[6.705680] (goal_target) StdoutLine: {'line': b'[ 70%] Built target goal_target__rosidl_typesupport_introspection_cpp\n'}
+[6.721173] (-) TimerEvent: {}
+[6.821641] (-) TimerEvent: {}
+[6.922093] (-) TimerEvent: {}
+[6.955676] (goal_target) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libgoal_target__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[7.022382] (-) TimerEvent: {}
+[7.092332] (goal_target) StdoutLine: {'line': b'[ 73%] Built target goal_target__rosidl_typesupport_fastrtps_cpp\n'}
+[7.122540] (-) TimerEvent: {}
+[7.143240] (goal_target) StdoutLine: {'line': b'[ 73%] Built target goal_target\n'}
+[7.192722] (goal_target) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[7.222665] (-) TimerEvent: {}
+[7.323238] (-) TimerEvent: {}
+[7.423544] (-) TimerEvent: {}
+[7.523951] (-) TimerEvent: {}
+[7.624241] (-) TimerEvent: {}
+[7.724572] (-) TimerEvent: {}
+[7.824985] (-) TimerEvent: {}
+[7.925361] (-) TimerEvent: {}
+[7.925875] (goal_target) StdoutLine: {'line': b'[ 76%] Built target goal_target__py\n'}
+[7.952308] (goal_target) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/goal_target__rosidl_generator_py.dir/rosidl_generator_py/goal_target/action/_goal_target_s.c.o\x1b[0m\n'}
+[8.025479] (-) TimerEvent: {}
+[8.125889] (-) TimerEvent: {}
+[8.188786] (goal_target) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking C shared library libgoal_target__rosidl_generator_py.so\x1b[0m\n'}
+[8.226006] (-) TimerEvent: {}
+[8.248583] (goal_target) StdoutLine: {'line': b'[ 82%] Built target goal_target__rosidl_generator_py\n'}
+[8.276782] (goal_target) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/goal_target_s__rosidl_typesupport_c.dir/rosidl_generator_py/goal_target/_goal_target_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[8.277141] (goal_target) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/goal_target_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/goal_target/_goal_target_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[8.277652] (goal_target) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/goal_target_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/goal_target/_goal_target_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[8.326161] (-) TimerEvent: {}
+[8.426531] (-) TimerEvent: {}
+[8.432243] (goal_target) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/goal_target/goal_target_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[8.434516] (goal_target) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/goal_target/goal_target_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[8.435414] (goal_target) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/goal_target/goal_target_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[8.473117] (goal_target) StdoutLine: {'line': b'[100%] Built target goal_target_s__rosidl_typesupport_introspection_c\n'}
+[8.473472] (goal_target) StdoutLine: {'line': b'[100%] Built target goal_target_s__rosidl_typesupport_c\n'}
+[8.475924] (goal_target) StdoutLine: {'line': b'[100%] Built target goal_target_s__rosidl_typesupport_fastrtps_c\n'}
+[8.491864] (goal_target) CommandEnded: {'returncode': 0}
+[8.493124] (goal_target) JobProgress: {'identifier': 'goal_target', 'progress': 'install'}
+[8.505275] (goal_target) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/goal_target'], 'cwd': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/goal_target', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'liam-bouffard', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/liam-bouffard', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2917', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'liam-bouffard', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'liam-bouffard', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'WINDOWPATH': '2', 'PATH': '/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/home/liam-bouffard/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/vncserver', 'SESSION_MANAGER': 'local/liam-bouffard-Legion-7-16IRX9:@/tmp/.ICE-unix/2874,unix/liam-bouffard-Legion-7-16IRX9:/tmp/.ICE-unix/2874', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/04b5d060_cc56_408e_b24f_24daee6bd2c3', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.161', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/kilted', 'CONDA_PYTHON_EXE': '/home/liam-bouffard/anaconda3/bin/python', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/goal_target', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/liam-bouffard/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/opt/ros/kilted'}), 'shell': False}
+[8.515174] (goal_target) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.515980] (goal_target) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[8.516380] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/ament_index/resource_index/rosidl_interfaces/goal_target\n'}
+[8.526718] (-) TimerEvent: {}
+[8.527665] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/action/GoalTarget.json\n'}
+[8.540304] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__functions.h\n'}
+[8.553284] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__struct.h\n'}
+[8.564525] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__type_support.h\n'}
+[8.574650] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/goal_target.h\n'}
+[8.586252] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/include/goal_target/goal_target/msg/rosidl_generator_c__visibility_control.h\n'}
+[8.596838] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/environment/library_path.sh\n'}
+[8.606277] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/environment/library_path.dsv\n'}
+[8.616885] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__rosidl_typesupport_fastrtps_c.h\n'}
+[8.626892] (-) TimerEvent: {}
+[8.630710] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/include/goal_target/goal_target/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[8.648951] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__rosidl_typesupport_introspection_c.h\n'}
+[8.668824] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/include/goal_target/goal_target/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[8.684992] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__builder.hpp\n'}
+[8.702283] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__struct.hpp\n'}
+[8.720320] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__traits.hpp\n'}
+[8.727059] (-) TimerEvent: {}
+[8.732916] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__type_support.hpp\n'}
+[8.746371] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/goal_target.hpp\n'}
+[8.756717] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/include/goal_target/goal_target/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[8.767513] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.776970] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/include/goal_target/goal_target/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[8.788202] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/include/goal_target/goal_target/action/detail/goal_target__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.804738] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/environment/pythonpath.sh\n'}
+[8.823745] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/environment/pythonpath.dsv\n'}
+[8.827237] (-) TimerEvent: {}
+[8.842020] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[8.863085] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[8.880802] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[8.897915] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[8.916764] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/__init__.py\n'}
+[8.927499] (-) TimerEvent: {}
+[8.934793] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/_goal_target_s.ep.rosidl_typesupport_c.c\n'}
+[8.952566] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/_goal_target_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[8.970095] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/_goal_target_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[8.987011] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/action/__init__.py\n'}
+[9.003993] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/action/_goal_target.py\n'}
+[9.022267] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/action/_goal_target_s.c\n'}
+[9.027615] (-) TimerEvent: {}
+[9.040515] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/goal_target_s__rosidl_typesupport_c.so\n'}
+[9.058133] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/goal_target_s__rosidl_typesupport_fastrtps_c.so\n'}
+[9.073267] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/goal_target_s__rosidl_typesupport_introspection_c.so\n'}
+[9.089575] (goal_target) StdoutLine: {'line': b'-- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/goal_target_s__rosidl_typesupport_fastrtps_c.so\n'}
+[9.089962] (goal_target) StdoutLine: {'line': b'-- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/goal_target_s__rosidl_typesupport_introspection_c.so\n'}
+[9.090492] (goal_target) StdoutLine: {'line': b'-- Up-to-date symlink: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/goal_target_s__rosidl_typesupport_c.so\n'}
+[9.090772] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/action/GoalTarget.idl\n'}
+[9.108326] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/action/GoalTarget.action\n'}
+[9.125912] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/ament_index/resource_index/package_run_dependencies/goal_target\n'}
+[9.127733] (-) TimerEvent: {}
+[9.144275] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/ament_index/resource_index/parent_prefix_path/goal_target\n'}
+[9.162122] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/environment/ament_prefix_path.sh\n'}
+[9.179680] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/environment/ament_prefix_path.dsv\n'}
+[9.197038] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/environment/path.sh\n'}
+[9.214024] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/environment/path.dsv\n'}
+[9.227868] (-) TimerEvent: {}
+[9.230888] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/local_setup.bash\n'}
+[9.248145] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/local_setup.sh\n'}
+[9.266156] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/local_setup.zsh\n'}
+[9.284185] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/local_setup.dsv\n'}
+[9.301576] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/package.dsv\n'}
+[9.314882] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/ament_index/resource_index/packages/goal_target\n'}
+[9.328056] (-) TimerEvent: {}
+[9.329036] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/rosidl_cmake-extras.cmake\n'}
+[9.340709] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.354838] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.365126] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[9.375809] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[9.385402] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[9.394627] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[9.405879] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_targetConfig.cmake\n'}
+[9.415635] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_targetConfig-version.cmake\n'}
+[9.426979] (goal_target) StdoutLine: {'line': b'-- Symlinking: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/package.xml\n'}
+[9.428244] (-) TimerEvent: {}
+[9.437569] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_generator_c.so\n'}
+[9.438277] (goal_target) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_generator_c.so" to ""\n'}
+[9.438483] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_fastrtps_c.so\n'}
+[9.438753] (goal_target) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[9.438986] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_introspection_c.so\n'}
+[9.439083] (goal_target) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_introspection_c.so" to ""\n'}
+[9.439239] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_c.so\n'}
+[9.439388] (goal_target) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_c.so" to ""\n'}
+[9.439475] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_fastrtps_cpp.so\n'}
+[9.439976] (goal_target) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[9.440095] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_introspection_cpp.so\n'}
+[9.440563] (goal_target) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[9.440679] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_cpp.so\n'}
+[9.441080] (goal_target) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_typesupport_cpp.so" to ""\n'}
+[9.503610] (goal_target) StdoutLine: {'line': b"Listing '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target'...\n"}
+[9.503808] (goal_target) StdoutLine: {'line': b"Compiling '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/__init__.py'...\n"}
+[9.503879] (goal_target) StdoutLine: {'line': b"Listing '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/action'...\n"}
+[9.503940] (goal_target) StdoutLine: {'line': b"Compiling '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/action/__init__.py'...\n"}
+[9.504003] (goal_target) StdoutLine: {'line': b"Compiling '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages/goal_target/action/_goal_target.py'...\n"}
+[9.510137] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_generator_py.so\n'}
+[9.510489] (goal_target) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/libgoal_target__rosidl_generator_py.so" to ""\n'}
+[9.510665] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/export_goal_target__rosidl_generator_cExport.cmake\n'}
+[9.510902] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/export_goal_target__rosidl_generator_cExport-noconfig.cmake\n'}
+[9.511081] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/export_goal_target__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[9.511195] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/export_goal_target__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[9.511267] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_target__rosidl_typesupport_introspection_cExport.cmake\n'}
+[9.511403] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_target__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[9.511478] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_target__rosidl_typesupport_cExport.cmake\n'}
+[9.511605] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_target__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[9.511700] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/export_goal_target__rosidl_generator_cppExport.cmake\n'}
+[9.511768] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/export_goal_target__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[9.511857] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/export_goal_target__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[9.511925] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_target__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[9.512008] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_target__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[9.512069] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_target__rosidl_typesupport_cppExport.cmake\n'}
+[9.512134] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/goal_target__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[9.512190] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/export_goal_target__rosidl_generator_pyExport.cmake\n'}
+[9.512247] (goal_target) StdoutLine: {'line': b'-- Installing: /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/share/goal_target/cmake/export_goal_target__rosidl_generator_pyExport-noconfig.cmake\n'}
+[9.514294] (goal_target) CommandEnded: {'returncode': 0}
+[9.528332] (-) TimerEvent: {}
+[9.539554] (goal_target) JobEnded: {'identifier': 'goal_target', 'rc': 0}
+[9.541523] (pioneer) JobStarted: {'identifier': 'pioneer'}
+[9.628521] (-) TimerEvent: {}
+[9.728874] (-) TimerEvent: {}
+[9.829286] (-) TimerEvent: {}
+[9.929546] (-) TimerEvent: {}
+[10.029920] (-) TimerEvent: {}
+[10.130287] (-) TimerEvent: {}
+[10.230627] (-) TimerEvent: {}
+[10.331021] (-) TimerEvent: {}
+[10.431389] (-) TimerEvent: {}
+[10.531689] (-) TimerEvent: {}
+[10.589799] (pioneer) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/build', '--no-deps', 'symlink_data'], 'cwd': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'liam-bouffard', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib:/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/liam-bouffard', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/stage_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2917', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'liam-bouffard', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'liam-bouffard', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'WINDOWPATH': '2', 'PATH': '/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/home/liam-bouffard/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/vncserver', 'SESSION_MANAGER': 'local/liam-bouffard-Legion-7-16IRX9:@/tmp/.ICE-unix/2874,unix/liam-bouffard-Legion-7-16IRX9:/tmp/.ICE-unix/2874', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/04b5d060_cc56_408e_b24f_24daee6bd2c3', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.161', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target:/opt/ros/kilted', 'CONDA_PYTHON_EXE': '/home/liam-bouffard/anaconda3/bin/python', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/liam-bouffard/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/lib/python3.12/site-packages:/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/goal_target:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor'}, 'shell': False}
+[10.631856] (-) TimerEvent: {}
+[10.732228] (-) TimerEvent: {}
+[10.832620] (-) TimerEvent: {}
+[10.933063] (-) TimerEvent: {}
+[10.989660] (pioneer) StdoutLine: {'line': b'running develop\n'}
+[11.033342] (-) TimerEvent: {}
+[11.133766] (-) TimerEvent: {}
+[11.234161] (-) TimerEvent: {}
+[11.242175] (pioneer) StdoutLine: {'line': b'running egg_info\n'}
+[11.242389] (pioneer) StdoutLine: {'line': b'creating pioneer.egg-info\n'}
+[11.266922] (pioneer) StdoutLine: {'line': b'writing pioneer.egg-info/PKG-INFO\n'}
+[11.267127] (pioneer) StdoutLine: {'line': b'writing dependency_links to pioneer.egg-info/dependency_links.txt\n'}
+[11.267261] (pioneer) StdoutLine: {'line': b'writing entry points to pioneer.egg-info/entry_points.txt\n'}
+[11.267400] (pioneer) StdoutLine: {'line': b'writing requirements to pioneer.egg-info/requires.txt\n'}
+[11.267465] (pioneer) StdoutLine: {'line': b'writing top-level names to pioneer.egg-info/top_level.txt\n'}
+[11.267526] (pioneer) StdoutLine: {'line': b"writing manifest file 'pioneer.egg-info/SOURCES.txt'\n"}
+[11.317853] (pioneer) StdoutLine: {'line': b"reading manifest file 'pioneer.egg-info/SOURCES.txt'\n"}
+[11.318601] (pioneer) StdoutLine: {'line': b"writing manifest file 'pioneer.egg-info/SOURCES.txt'\n"}
+[11.334362] (-) TimerEvent: {}
+[11.344528] (pioneer) StdoutLine: {'line': b'running build_ext\n'}
+[11.344717] (pioneer) StdoutLine: {'line': b'Creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/lib/python3.12/site-packages/pioneer.egg-link (link to .)\n'}
+[11.345432] (pioneer) StdoutLine: {'line': b'Installing driver script to /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/lib/pioneer\n'}
+[11.345795] (pioneer) StdoutLine: {'line': b'\n'}
+[11.345964] (pioneer) StdoutLine: {'line': b'Installed /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer\n'}
+[11.346045] (pioneer) StdoutLine: {'line': b'running symlink_data\n'}
+[11.346133] (pioneer) StdoutLine: {'line': b'creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/share/ament_index\n'}
+[11.346203] (pioneer) StdoutLine: {'line': b'creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/share/ament_index/resource_index\n'}
+[11.346271] (pioneer) StdoutLine: {'line': b'creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/share/ament_index/resource_index/packages\n'}
+[11.346335] (pioneer) StdoutLine: {'line': b'symbolically linking /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/resource/pioneer -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/share/ament_index/resource_index/packages\n'}
+[11.346538] (pioneer) StdoutLine: {'line': b'symbolically linking /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/package.xml -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/share/pioneer\n'}
+[11.346698] (pioneer) StdoutLine: {'line': b'creating /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/share/pioneer/launch\n'}
+[11.346775] (pioneer) StdoutLine: {'line': b'symbolically linking /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/build/pioneer/launch/driver_launch.py -> /home/liam-bouffard/Desktop/rob599_mobile_robotics/pioneer_ws/install/pioneer/share/pioneer/launch\n'}
+[11.379920] (pioneer) CommandEnded: {'returncode': 0}
+[11.387638] (pioneer) JobEnded: {'identifier': 'pioneer', 'rc': 0}
+[11.388834] (-) EventReactorShutdown: {}
